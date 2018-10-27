@@ -26,7 +26,7 @@ header {height:120px; min-width: 1000px; position: block; background-color: #FFF
 header a.logo {
 	position: absolute; 
 	display: block; width: 100px; height: 100px;
-	background: url(../../../../Web/Test_02/images/logo.png) no-repeat 0 0; background-size: contain;
+	background: url(../images/logo.png) no-repeat 0 0; background-size: contain;
 	top: 20px; left: 20px;
 }
 header a.logo span {display:none;}
