@@ -1,0 +1,36 @@
+/* CSS Document for Screens */
+
+/* import Fonts from google */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
+
+body {font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 300; color: #555; margin: 0; padding:0;}
+
+#page {max-width: 1200px; margin:center; position: absolute; }
+
+/* Text */
+
+h1 { margin: 0 0 0.25em 0; font-size: 2.15em; font-weight: 700;}
+h4 { margin: 0 0 0.25em 0; font-size: 1.1em; font-weight: 300;}
+h5 { margin: 0 0 0.25em 0; font-size: 1.1em; font-weight: 300;}
+h2 { margin: 0 0 0.25em 0; font-size: 1.65em; font-weight: 700; line-height: 1em}
+h3 { margin: 0 0 0.25em 0; font-size: 1.2em; font-weight: 700; }
+
+p { margin: 0 0 0.25em 0; }
+
+a { color: #007eff;  }
+a:visited {color:#65b1ff;}
+
+/* Header */
+header {height:120px; min-width: 1000px; position: block; background-color: #FFFFFF;}
+
+header a.logo {
+	position: absolute; 
+	display: block; width: 100px; height: 100px;
+	background: url(../../../../Web/Test_02/images/logo.png) no-repeat 0 0; background-size: contain;
+	top: 20px; left: 20px;
+}
+header a.logo span {display:none;}
+
+header div h1 { line-height: 1.1em; margin: 20px 0 0px 140px; color: #642e2d; }
+header div h4 { line-height: 1.5em; margin: 10px 0 0 140px; color: #9d3b38; font-weight: 500;}
+header div h5 { line-height: 1.5em; margin: 0 0 0 140px; color: #9d3b38; font-weight: 500;}
