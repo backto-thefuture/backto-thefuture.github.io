@@ -27,19 +27,27 @@ Forme di comunicazione partecipativa e immersiva per un vasto pubblico potranno 
 ### Gruppo di lavoro @polito
 
 Paolo Piumatti, Professore Associato, DAD 
+
 Fulvio Rinaudo, Professore Ordinario, DAD 
+
 Rosa Tamborrino, Professore Ordinario, DIST 
 
 Michela Mezzano, Dottorando, DAD 
+
 Noemi Mafrici, Assegnista di Ricerca, DAD 
 
 Pablo Ruffino, Dottorando, DISEG
+
 Matteo del Giudice, RtdA, DISEG
+
 Daniela De Luca, Assegnista di Ricerca, DISEG
 
 Andrea Tonin, Assegnista di Ricerca, DAD 
+
 Michele Calvano, Assegnista di Ricerca, DAD 
+
 Elisabetta Caterina Giovannini, Assegnista di Ricerca, DAD 
+
 Alessandra Spreafico, Assegnista di Ricerca, DAD
 
 Giacomo Patrucco, Assegnista di Ricerca del Laboratorio di Geomatica
