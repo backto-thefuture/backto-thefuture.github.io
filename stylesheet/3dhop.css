@@ -78,7 +78,7 @@ body {
 	-webkit-tap-highlight-color: transparent; }
 
 #bookmarksToolbar { 
-	float:fixed;
+	position:fixed;
 	left:930px; 
 	top:160px;
 	-webkit-user-select:none; 
