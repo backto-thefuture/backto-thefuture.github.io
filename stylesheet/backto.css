@@ -22,10 +22,10 @@ a { color: #007eff;  }
 a:visited {color:#65b1ff;}
 
 /* Header */
-header {height:140px; min-width: 1000px; position: fixed; background-color: #FFFFFF;}
+header {height:140px; min-width: 1000px; position: absolute; background-color: #FFFFFF;}
 
 header a.logo {
-	position:fixed; 
+	position:absolute; 
 	display: block; width: 100px; height: 100px;
 	background: url(../images/logo.png) no-repeat 0 0; background-size: contain;
 	top: 20px; left: 20px;

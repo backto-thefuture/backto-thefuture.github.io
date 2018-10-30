@@ -24,9 +24,9 @@ body {
 
 .tdhop { 
 	position:absolute; 
-	top: 160;
 	width:100%; 
 	height:100%; 
+	top:140px;
 	-webkit-user-select:none; 
 	-webkit-touch-callout:none; 
 	-khtml-user-select:none; 
@@ -39,9 +39,10 @@ body {
 	-webkit-tap-highlight-color: transparent; }
 
 #tdhlg { 
-	position:absolute; 
-	right:2; 
-	bottom:2; 
+	position:fixed;
+	top: 850px;
+	left: 880px;
+	z-index:1;
 	width:105px; 
 	height:13px; 
 	overflow:hidden; 
@@ -64,9 +65,10 @@ body {
 	-webkit-tap-highlight-color: transparent; }
 
 #toolbar { 
-	position:fixed; 
+	z-index:1;
+	position:absolute; 
 	left:20px; 
-	top:160px; 
+	top:20px; 
 	-webkit-user-select:none; 
 	-webkit-touch-callout:none; 
 	-khtml-user-select:none; 
@@ -79,9 +81,11 @@ body {
 	-webkit-tap-highlight-color: transparent; }
 
 #bookmarksToolbar { 
-	position:fixed;
+	z-index:1;
+	position:absolute; 
 	left:930px; 
-	top:160px;
+	top:20px;
+	widht: 50px;
 	-webkit-user-select:none; 
 	-webkit-touch-callout:none; 
 	-khtml-user-select:none; 
@@ -94,6 +98,7 @@ body {
 	-webkit-tap-highlight-color: transparent; }
 
 #toolbar img { 
+	z-index:1;
 	margin-bottom:8px; 
 	width:50px; 
 	height:50px; 
@@ -111,6 +116,7 @@ body {
 	-webkit-tap-highlight-color: transparent; }
 
 #bookmarksToolbar img { 
+	z-index:1;
 	margin-bottom:8px; 
 	width:50px; 
 	height:50px; 
@@ -127,14 +133,14 @@ body {
 	-webkit-tap-highlight-color: rgba(0,0,0,0); 
 	-webkit-tap-highlight-color: transparent; }
 
-
-#dbinfo { 
-	position:absolute;
-	top:140px;
+#DBinfo { 
+	position:fixed;
 	left: 1020px;
- }
+	top: 140px;
+}
 
 .output-box { 
+	z-index:1;
 	position:absolute; 
 	display:none; 
 	border-radius:5px; 
@@ -162,6 +168,7 @@ body {
 	-webkit-tap-highlight-color: transparent; }
 
 .output-text { 
+	z-index:1;
 	padding:0px 5px 0px 5px; 
 	cursor:text; 
 	-webkit-user-select:text; 
@@ -172,6 +179,7 @@ body {
 	user-select:text; }
 
 .output-input { 
+	z-index:1;
 	vertical-align:middle; 
 	cursor:pointer; 
 	height:15px; 
@@ -187,6 +195,7 @@ body {
 	-webkit-tap-highlight-color: transparent; }
 
 .output-table { 
+	z-index:1;
 	margin:0; 
 	width:100%; 
 	color:#f8f8f8; 
@@ -206,6 +215,7 @@ body {
 	-webkit-tap-highlight-color: transparent; }
 
 .output-table img { 
+	z-index:1;
 	height:25px; 
 	cursor:pointer; 
 	background-color:rgba(125,125,125,0.25); 
@@ -227,14 +237,15 @@ body {
 .output-table img:hover { background-color:rgba(125,125,125,0.8); }
 
 .output-box hr {  
+	z-index:1;
 	margin:0 0 3px 0; 
 	border:0; 
 	height:1px; 
 	background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(225, 225, 225, 0.75), rgba(0, 0, 0, 0)); }
 
 #draw-canvas { 
-	width:100%; 
-	height:100%; 
+	position:fixed;
+	top: 140px;
 	background-repeat:no-repeat; 
 	background-position:center top; 
 	-webkit-background-size:cover; 
@@ -258,6 +269,7 @@ input[type=range].output-input { padding: 0; width: 125px; }
 
 /*DEPRECATED*/
 #measurebox { 
+	z-index:1;
 	position:absolute; 
 	visibility:hidden; 
 	overflow:hidden; 
@@ -287,6 +299,7 @@ input[type=range].output-input { padding: 0; width: 125px; }
 	-webkit-tap-highlight-color: transparent; }
 
 #measure-output { 
+	z-index:1;
 	cursor:text; 
 	-webkit-user-select:text; 
 	-webkit-touch-callout:text; 
