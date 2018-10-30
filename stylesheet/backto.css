@@ -5,26 +5,27 @@
 
 body {font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 300; color: #555; margin: 0; padding:0;}
 
-#page {max-width: 1200px; margin:center; position: absolute; }
-
 /* Text */
 
 h1 { margin: 0 0 0.25em 0; font-size: 2.15em; font-weight: 700;}
-h4 { margin: 0 0 0.25em 0; font-size: 1.1em; font-weight: 300;}
-h5 { margin: 0 0 0.25em 0; font-size: 1.1em; font-weight: 300;}
-h2 { margin: 0 0 0.25em 0; font-size: 1.65em; font-weight: 700; line-height: 1em}
-h3 { margin: 0 0 0.25em 0; font-size: 1.2em; font-weight: 700; }
+h2 { margin: 0 0 0.25em 0; font-size: 1.1em; font-weight: 300;}
+h3 { margin: 0 0 0.25em 0; font-size: 1.1em; font-weight: 300;}
+
+h4 { margin: 0 0 0.25em 0; font-size: 1em;}
+
 
 p { margin: 0 0 0.25em 0; }
+p1 { margin: 0 0 0.25em 0; font-size: 0.9em; line-height: 1.25em; font-weight: 500; }
+p2 { margin: 0 0 0.25em 0; lfont-size: 0.9em; ine-height: 1.25em; font-weight: 450; }
 
 a { color: #007eff;  }
 a:visited {color:#65b1ff;}
 
 /* Header */
-header {height:120px; min-width: 1000px; position: block; background-color: #FFFFFF;}
+header {height:140px; min-width: 1000px; position: absolute; background-color: #FFFFFF;}
 
 header a.logo {
-	position: absolute; 
+	position:absolute; 
 	display: block; width: 100px; height: 100px;
 	background: url(../images/logo.png) no-repeat 0 0; background-size: contain;
 	top: 20px; left: 20px;
@@ -32,5 +33,7 @@ header a.logo {
 header a.logo span {display:none;}
 
 header div h1 { line-height: 1.1em; margin: 20px 0 0px 140px; color: #642e2d; }
-header div h4 { line-height: 1.5em; margin: 10px 0 0 140px; color: #9d3b38; font-weight: 500;}
-header div h5 { line-height: 1.5em; margin: 0 0 0 140px; color: #9d3b38; font-weight: 500;}
+header div h2 { line-height: 1.5em; margin: 10px 0 0 140px; color: #9d3b38; font-weight: 500;}
+header div h3 { line-height: 1.5em; margin: 0 0 0 140px; color: #9d3b38; font-weight: 500;}
+
+body div h4 { color: #9d3b38; font-weight: 500;}
