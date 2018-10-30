@@ -35,7 +35,7 @@ body {
 	-webkit-tap-highlight-color: transparent; }
 
 #tdhlg { 
-	position:absolute; 
+	position:fixed; 
 	right:2; 
 	bottom:2; 
 	width:105px; 
