@@ -22,7 +22,7 @@ a { color: #007eff;  }
 a:visited {color:#65b1ff;}
 
 /* Header */
-header {height:140px; min-width: 1000px; position: fixed; background-color: #FFFFFF;}
+header {height:140px; min-width: 1000px; position: absolute; background-color: #FFFFFF;}
 
 header a.logo {
 	position:fixed; 
