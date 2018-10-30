@@ -128,7 +128,7 @@ body {
 
 
 #dbinfo { 
-	position:absolute;
+	position:fixed;
 	top:140px;
 	left: 1020px;
  }
