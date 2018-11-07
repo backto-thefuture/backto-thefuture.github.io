@@ -178,28 +178,23 @@ function setup3dhop() {
 	presenter.setScene({
 		meshes: {
 			"mesh_1" : { url: "models/BEITELWALIDXmeshmixer.nxz" },
-			"mesh_2" : { url: "models/BEITELWALISXmeshmixer.nxz" }
-		},
+			},
+			
 		modelInstances : {
 			"model_1" : { 
 				mesh  : "mesh_1",
 				color : [0.8, 0.7, 0.75],
 				tags : ["meshdx"]
 			},
-			
-			"model_2" : { 
-				mesh  : "mesh_2",
-				color : [0.8, 0.7, 0.75],
-				tags : ["meshsx"]
-			}
+
 		},
 		
 		trackball: {
 			type : TurntablePanTrackball,
 			trackOptions : {
 				startPhi: -35.0,
-				startTheta: 15.0,
-				startDistance: -0.000005,
+				startTheta: 15,
+				startDistance: 2.5,
 				minMaxPhi: [-180, 180],
 				minMaxTheta: [-10.0, 50.0],
 				minMaxDist: [0.5, 3.0]
