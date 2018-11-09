@@ -163,8 +163,7 @@
   <table class="output-table" onmousedown="event.stopPropagation()">
 	<tr><td>Plane</td><td>Position</td><td>Flip</td></tr>
 	<tr>
-		<td>
-			<img   id="xplane_on"    
+		<td><img   id="xplane_on"    
 				 title="Disable X Axis Section" 
 				 src="skins/icons/sectionX_on.png" 
 				 onclick="sectionxSwitch()" 
@@ -172,25 +171,21 @@
 			
 			<img   id="xplane"       
 				 title="Enable X Axis Section"  
-				 src="skins/icons/sectionX.png"  onclick="sectionxSwitch()"/><br/>
-		</td>
-		<td>
-			<input id="xplaneSlider" 
+				 src="skins/icons/sectionX.png"  onclick="sectionxSwitch()"/><br/></td>
+		
+		<td><input id="xplaneSlider" 
 				   class="output-input"  
 				   type="range"    
-				   title="Move X Axis Section Position"/>
-		</td>
-		<td>
-			<input id="xplaneFlip"   
+				   title="Move X Axis Section Position"/></td>
+		
+		<td><input id="xplaneFlip"   
 				   class="output-input"  
 				   type="checkbox" 
-				   title="Flip X Axis Section Direction"/>
-		</td>
-	  </tr>
+				   title="Flip X Axis Section Direction"/></td>
+	 </tr>
 	  
 	  <tr>
-		<td>
-			<img   id="yplane_on"    
+		<td><img   id="yplane_on"    
 				 title="Disable Y Axis Section" 
 				 src="skins/icons/sectionY_on.png" 
 				 onclick="sectionySwitch()" 
@@ -199,25 +194,21 @@
 			<img   id="yplane"       
 				 title="Enable Y Axis Section"  
 				 src="skins/icons/sectionY.png"  
-				 onclick="sectionySwitch()"/><br/>
-		</td>
-		<td>
-			<input id="yplaneSlider" 
+				 onclick="sectionySwitch()"/><br/></td>
+		  
+		<td><input id="yplaneSlider" 
 				   class="output-input"  
 				   type="range"    
-				   title="Move Y Axis Section Position"/>
-		</td>
-		<td>
-			<input id="yplaneFlip"   
+				   title="Move Y Axis Section Position"/></td>
+		  
+		<td><input id="yplaneFlip"   
 				   class="output-input"  
 				   type="checkbox" 
-				   title="Flip Y Axis Section Direction"/>
-		  </td>
+				   title="Flip Y Axis Section Direction"/></td>
 	  </tr>
 	  
 	  <tr>
-		<td>
-			<img   id="zplane_on"    
+		<td><img   id="zplane_on"    
 				 title="Disable Z Axis Section" 
 				 src="skins/icons/sectionZ_on.png" 
 				 onclick="sectionzSwitch()" 
@@ -226,25 +217,23 @@
 			<img   id="zplane"       
 				 title="Enable Z Axis Section"  
 				 src="skins/icons/sectionZ.png"  
-				 onclick="sectionzSwitch()"/><br/>
-		  </td>
-		<td>
-			<input id="zplaneSlider" 
+				 onclick="sectionzSwitch()"/><br/></td>
+		  
+		<td><input id="zplaneSlider" 
 				   class="output-input"  
 				   type="range"    
-				   title="Move Y Axis Section Position"/>
-		  </td>
-		<td>
-			<input id="zplaneFlip"   
+				   title="Move Y Axis Section Position"/></td>
+		  
+		<td><input id="zplaneFlip"   
 				   class="output-input"  
-				   type="checkbox" title="Flip Z Axis Section Direction"/>
-		  </td>
+				   type="checkbox" title="Flip Z Axis Section Direction"/></td>
 	  </tr>
 	 </table>
 	 
   <table class="output-table" 
 		 onmousedown="event.stopPropagation()" 
 		 style="text-align:right;">
+	  
 	<tr>
 	 <td>Show planes<input id="showPlane" 
 						   class="output-input" 
@@ -340,9 +329,9 @@ function setup3dhop() {
 
 	presenter.setScene({
 		meshes: {
-			"mesh_1" : { url: "models/ABUSIMBELDXmeshmixer.nxz" },
-			"mesh_2" : { url: "models/ABUSIMBELSXmeshmixer.nxz" },
-			"hotspot_1" : { url: "models/hotspots/abusimbel_01.ply" }
+			"mesh_1" : { url: "models/abusimbel/ABUSIMBELDXmeshmixer.nxz" },
+			"mesh_2" : { url: "models/abusimbel/ABUSIMBELSXmeshmixer.nxz" },
+			"hotspot_1" : { url: "models/abusimbel/abusimbel_hotspots/abusimbel_s_01.ply" }
 		},
 		
 		modelInstances : {
