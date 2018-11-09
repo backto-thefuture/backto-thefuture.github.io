@@ -16,7 +16,7 @@ File > Export Mesh As.. > NOMETEMPIODX/SXmesh.obj
 
 File > Import Mesh > NOMETEMPIODX/SXmesh.obj
 Filters > Normals, Curvatures and Orientation > Transform:Translate, Center, set Origin > Posizionare il modello secondo la posizione desiderata
-considerare FOV: ca. 60 - la Y và flippata con la Z
+considerare FOV: ca. 60 - la Y vÃ  flippata con la Z
 Filters > Mesh Layer > Matrix:Freeze Current Matrix
 Filters > Normals, Curvatures and Orientation> Matrix:Freeze Current Matrix
 File > Export Mesh As.. > NOMETEMPIODX/SXmesh.obj (sovrascrivere vecchia versione, tutte le spunte attive)
@@ -71,7 +71,7 @@ Textures enabled
 Creating level 0
 ...
 
-Al termine, verificare che esita un file NOMETEMPIODX/SXmeshmixer.nxs sparso nella cartella Nexus_4.2 (ci mette un pò di tempo)
+Al termine, verificare che esita un file NOMETEMPIODX/SXmeshmixer.nxs sparso nella cartella Nexus_4.2 (ci mette un pÃ² di tempo)
 
 6.2) Aprire con Editor di Testo "Compress_Nexus.bat" (tasto dx - Apri con..) e scrivere/riscrivere i comandi per la creazione del file .nxz
 
