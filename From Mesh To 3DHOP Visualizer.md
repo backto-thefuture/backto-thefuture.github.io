@@ -56,7 +56,9 @@ NOMETEMPIODX/SXmeshmixer.mtl
 NOMETEMPIODX/SXmeshmixer_material_0.jpg  
 NOMETEMPIODX/SXmeshmixer_GeneratedMat1.jpg  
   
-**6.1 Aprire con Editor di Testo "Build_Nexus.bat" (tasto dx - Apri con..) e scrivere/riscrivere i comandi per la creazione del file .nxs**  
+**6.1 Nexus_4.2 Creazione file .nxs**  
+  
+Aprire con Editor di Testo "Build_Nexus.bat" (tasto dx - Apri con..) e scrivere/riscrivere i comandi per la creazione del file .nxs  
   
 nxsbuild NOMETEMPIODXmeshmixer.ply -o NOMETEMPIODXmeshmixer.nxs  
 nxsbuild NOMETEMPIOSXmeshmixer.ply -o NOMETEMPIOSXmeshmixer.nxs  
@@ -64,30 +66,33 @@ nxsbuild NOMETEMPIOSXmeshmixer.ply -o NOMETEMPIOSXmeshmixer.nxs
   
 Salvare il file Build_Nexus.bat e chiudere l'Editor  
 Doppio Click su Build_Nexus.bat (a questo punto apre in automato il cmd e fa quello che deve fare...)  
-Dovrebbe apparire  
   
-Components: mesh textures  
-Normals enabled  
-Textures enabled  
-Creating level 0  
-...  
+Dovrebbe apparire  
+> Components: mesh textures  
+> Normals enabled  
+> Textures enabled  
+> Creating level 0  
+> ...  
   
 Al termine, verificare che esita un file NOMETEMPIODX/SXmeshmixer.nxs sparso nella cartella Nexus_4.2 (ci mette un pò di tempo)  
   
-**6.2 Aprire con Editor di Testo "Compress_Nexus.bat" (tasto dx - Apri con..) e scrivere/riscrivere i comandi per la creazione del file .nxz**  
+**6.2 Nexus_4.2 Creazione file .nxz**  
   
+Aprire con Editor di Testo "Compress_Nexus.bat" (tasto dx - Apri con..) e scrivere/riscrivere i comandi per la creazione del file .nxz  
+    
 nxscompress NOMETEMPIODXmeshmixer.nxs -o NOMETEMPIOSXmeshmixer.nxz  
 nxscompress NOMETEMPIOSXmeshmixer.nxs -o NOMETEMPIOSXmeshmixer.nxz  
 (va bene anche una sola riga, fare una riga per ogni file che si vuole convertire)  
   
 Salvare il file Compress_Nexus.bat e chiudere l'Editor  
 Doppio Click su Compress_Nexus.bat (a questo punto apre in automato il cmd e fa quello che deve fare...)  
+  
 Dovrebbe apparire (i numeri variano)  
   
-Vertex quantization step: 0.000  
-Texture quantization step: 0.25  
-Saving with flag: 4 (compressed with CORTO)  
-Textures: 117   
+> Vertex quantization step: 0.000  
+> Texture quantization step: 0.25  
+> Saving with flag: 4 (compressed with CORTO)  
+> Textures: 117   
   
 Al termine, verificare che esita un file NOMETEMPIODX/SXmeshmixer.nxz sparso nella cartella Nexus_4.2 (ci mette poco tempo)  
   
