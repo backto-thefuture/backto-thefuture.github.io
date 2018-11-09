@@ -1,6 +1,7 @@
-****Workflow da Mesh a 3DHOP****  
+**Workflow da Mesh a 3DHOP**  
   
 Giacomo - Alessandra ci inviano i modelli in formato .obj con texture .jpg e .mtl  
+  
 NOMETEMPIO_DX/SX_texture.obj  
 NOMETEMPIO_DX/SX_texture.jpg  
 NOMETEMPIO_DX/SX_texture.mtl  
@@ -99,7 +100,3 @@ Al termine, verificare che esita un file NOMETEMPIODX/SXmeshmixer.nxz sparso nel
 _ . _ . _ . _ . _  
   
 *A questo punto i file .nxz possono essere richiamati dalle loro directory mediante codice html e sono visualizzabili online :)*
-
-
-
-
