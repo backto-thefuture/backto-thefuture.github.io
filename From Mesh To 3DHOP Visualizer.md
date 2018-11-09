@@ -1,14 +1,14 @@
-Workflow da Mesh a 3DHOP
+Workflow da Mesh a 3DHOP  
 
-Giacomo - Alessandra ci inviano i modelli in formato .obj con texture .jpg e .mtl
-> NOMETEMPIO_DX/SX_texture.obj
-> NOMETEMPIO_DX/SX_texture.jpg
-> NOMETEMPIO_DX/SX_texture.mtl
-Elisabetta apre il file in MeshLab e ottimizza il modello per il visualizzatore 3DHOP
+Giacomo - Alessandra ci inviano i modelli in formato .obj con texture .jpg e .mtl  
+> NOMETEMPIO_DX/SX_texture.obj  
+> NOMETEMPIO_DX/SX_texture.jpg  
+> NOMETEMPIO_DX/SX_texture.mtl  
+Elisabetta apre il file in MeshLab e ottimizza il modello per il visualizzatore 3DHOP  
 
-1) aprire una nuova sessione di MeshLab
+1) aprire una nuova sessione di MeshLab  
 
-File > Import Mesh
+File > Import Mesh  
 Filters > Normals, Curvatures and Orientation> Transform:Translate, Center, set Origin > Transformation:Center on BBox > Apply > Close
 File > Export Mesh As.. > NOMETEMPIODX/SXmesh.obj
 
