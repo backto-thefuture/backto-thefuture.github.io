@@ -334,15 +334,22 @@ function setup3dhop() {
 
 	presenter.setScene({
 		meshes: {
-			"mesh_1" : { url: "models/beitelwali/BEITELWALIDXmeshmixer.nxz" },
-			},
-			
+			"mesh_1" : { url: "models/beitelwali/DX_beitelwali.nxz" },
+			"mesh_2" : { url: "models/beitelwali/SX_beitelwali.nxz" }
+				},
+		
 		modelInstances : {
 			"model_1" : { 
 				mesh  : "mesh_1",
 				color : [0.8, 0.7, 0.75],
 				tags : ["meshdx"]
 			},
+			
+			"model_2" : { 
+				mesh  : "mesh_2",
+				color : [0.8, 0.7, 0.75],
+				tags : ["meshsx"]
+			}
 
 		},
 		
