@@ -42,6 +42,7 @@
 <div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
 	
 	<div id="tdhlg"></div>
+	
 <!--START-TOOLBAR-->
 	
  <div id="toolbar">
@@ -182,7 +183,8 @@
 			
 			<img   id="xplane"       
 				 title="Enable X Axis Section"  
-				 src="skins/icons/sectionX.png"  onclick="sectionxSwitch()"/><br/></td>
+				 src="skins/icons/sectionX.png"  
+				 onclick="sectionxSwitch()"/><br/></td>
 		
 		<td><input id="xplaneSlider" 
 				   class="output-input"  
@@ -237,7 +239,8 @@
 		  
 		<td><input id="zplaneFlip"   
 				   class="output-input"  
-				   type="checkbox" title="Flip Z Axis Section Direction"/></td>
+				   type="checkbox" 
+				   title="Flip Z Axis Section Direction"/></td>
 	  </tr>
 	 </table>
 	 
@@ -416,8 +419,6 @@ function actionsToolbar(action) {
 	else if(action=='hotspot'|| action=='hotspot_on') { presenter.toggleSpotVisibility(HOP_ALL, true); presenter.enableOnHover(!presenter.isOnHoverEnabled()); hotspotSwitch(); }
 //--HOTSPOTS--	
 }	
-
-
 //--MEASURE--
 function onEndMeasure(measure) {
 	// measure.toFixed(2) sets the number of decimals when displaying the measure
@@ -425,7 +426,6 @@ function onEndMeasure(measure) {
 	$('#measure-output').html(measure.toFixed(2) + "cm"); 
 }
 //--MEASURE--
-
 //--PICKPOINT--
 function onEndPick(point) {
 	// .toFixed(2) sets the number of decimals when displaying the picked point	

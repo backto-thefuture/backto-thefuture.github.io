@@ -42,6 +42,7 @@
 <div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
 	
 	<div id="tdhlg"></div>
+	
 <!--START-TOOLBAR-->
 	
  <div id="toolbar">
@@ -72,11 +73,13 @@
 	 
 <!--LIGHT-->
   <img id="light_on"    
-	   title="Disable Light Control" src="skins/dark/lightcontrol_on.png" 
+	   title="Disable Light Control" 
+	   src="skins/dark/lightcontrol_on.png" 
 	   style="position:absolute; visibility:hidden;"/>
 	 
   <img id="light"       
-	   title="Enable Light Control"   src="skins/dark/lightcontrol.png"/><br/>
+	   title="Enable Light Control"   
+	   src="skins/dark/lightcontrol.png"/><br/>
 <!--LIGHT-->
 	 
 <!--HOTSPOT-->
@@ -180,7 +183,8 @@
 			
 			<img   id="xplane"       
 				 title="Enable X Axis Section"  
-				 src="skins/icons/sectionX.png"  onclick="sectionxSwitch()"/><br/></td>
+				 src="skins/icons/sectionX.png"  
+				 onclick="sectionxSwitch()"/><br/></td>
 		
 		<td><input id="xplaneSlider" 
 				   class="output-input"  
@@ -317,10 +321,7 @@
 	
 </div>
 	
-	
 <canvas id="draw-canvas" style="background-color: #F0F0F0"/>
-
-
 
 </body>
 
@@ -410,8 +411,6 @@ function actionsToolbar(action) {
 	else if(action=='sections' || action=='sections_on') { sectiontoolReset(); sectiontoolSwitch(); }
 //--SECTIONS--
 }	
-
-
 //--MEASURE--
 function onEndMeasure(measure) {
 	// measure.toFixed(2) sets the number of decimals when displaying the measure
@@ -419,7 +418,6 @@ function onEndMeasure(measure) {
 	$('#measure-output').html(measure.toFixed(2) + "cm"); 
 }
 //--MEASURE--
-
 //--PICKPOINT--
 function onEndPick(point) {
 	// .toFixed(2) sets the number of decimals when displaying the picked point	
