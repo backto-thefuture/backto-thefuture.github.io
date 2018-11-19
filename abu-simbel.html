@@ -364,11 +364,14 @@ function setup3dhop() {
 			trackOptions : {
 				startPhi: -35,
 				startTheta: 15.0,
-				startDistance: 2.5,
+				startDistance: 4,
 				minMaxPhi: [-180, 180],
 				minMaxTheta: [-10.0, 50.0],
 				minMaxDist: [0.5, 3.0]
 			}
+		},
+		space : {
+			cameraFOV     : 35.0
 		}
 	});
 
@@ -379,10 +382,14 @@ function setup3dhop() {
 //--POINT PICKING--
 	presenter._onEndPickingPoint = onEndPick;
 //--POINT PICKING--
-
+    
 //--SECTIONS--
 	sectiontoolInit();
 //--SECTIONS--
+
+//--HIDE HOTSPOTS AT START--
+	presenter.setSpotVisibility(HOP_ALL, false, true);
+//--HIDE HOTSPOTS AT START--
 }
 
 function actionsToolbar(action) {
