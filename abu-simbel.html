@@ -362,15 +362,16 @@ function setup3dhop() {
 		trackball: {
 			type : TurntablePanTrackball,
 			trackOptions : {
-				startPhi: -35,
+				startPhi: 0,
 				startTheta: 15.0,
-				startDistance: 4,
+				startDistance: 2.5,
 				minMaxPhi: [-180, 180],
 				minMaxTheta: [-10.0, 50.0],
 				minMaxDist: [0.5, 3.0]
 			}
 		},
 		space : {
+			centerMode: "scene",
 			cameraFOV     : 50.0
 		}
 	});
