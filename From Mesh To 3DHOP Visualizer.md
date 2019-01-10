@@ -10,14 +10,14 @@ Elisabetta apre il file in MeshLab e ottimizza il modello per il visualizzatore 
   
 **1. aprire una nuova sessione di MeshLab**  
   
-File > Import Mesh
+File > Import Mesh  
 Filters > Normals, Curvatures and Orientation> Transform:Scale, Normalize > Uniform Scaling [100] Freze Matrix > Apply > Close (questo perchè 3DHOP lavora con unità pari a 1 - i modelli arrivano scalati in m, noi li vogliamo in cm)
 Filters > Normals, Curvatures and Orientation> Transform:Translate, Center, set Origin > Transformation:Center on BBox > Apply > Close  
-File > Export Mesh As.. > NOMETEMPIODX/SXmesh.obj  
+File > Export Mesh As.. > DX/SX_NOMETEMPIOmesh.obj  
   
 **2. aprire una nuova sessione di MeshLab**  
   
-File > Import Mesh > NOMETEMPIODX/SXmesh.obj  
+File > Import Mesh > DX/SX_NOMETEMPIOmesh.obj  
 Filters > Normals, Curvatures and Orientation > Transform:Translate, Center, set Origin > Posizionare il modello secondo la posizione desiderata  
 considerare FOV: ca. 60 - la Y và flippata con la Z  
 Filters > Mesh Layer > Matrix:Freeze Current Matrix  
