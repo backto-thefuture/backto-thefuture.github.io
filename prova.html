@@ -282,29 +282,37 @@
 	   title="Hide All"            
 	   src="skins/abusimbel/hide_all.png"	
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, true);
-				isSpotVisibilityEnabledByName(HOP_ALL, false);"/><br/>
+				presenter.toggleSpotVisibility(HOP_ALL, true);"/><br/>
 
 <!--SHOW-PARTS-->
   <img id="showdx"      
 	   title="Show Part DX"              
 	   src="skins/abusimbel/dx.png"	
-	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshdx', true, true);"/><br/>
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); 			 presenter.setInstanceVisibility('meshdx', true, true);
+				presenter.toggleSpotVisibility('s_1', true);
+				presenter.toggleSpotVisibility('h_1', true);"/><br/>
 	
   <img id="showsx"     
 	   title="Show Part SX"               
 	   src="skins/abusimbel/sx.png"	
-	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshsx', true, true);"/><br/>
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshsx', true, true);
+	   presenter.toggleSpotVisibility('s_0', true);
+	   presenter.toggleSpotVisibility('h_0', true);"/><br/>
 	 
 <!--TOGGLE-PARTS-->
   <img id="toggledx"      
 	   title="Toggle Part DX"              
 	   src="skins/abusimbel/toggle_dx.png"		
-	   onclick="presenter.toggleInstanceVisibility('meshdx', true);"/><br/>
+	   onclick="presenter.toggleInstanceVisibility('meshdx', true);
+				presenter.toggleSpotVisibility('s_1', true);
+				presenter.toggleSpotVisibility('h_1', true);"/><br/>
 	
   <img id="togglesx"     
 	   title="Toggle Part SX"               
 	   src="skins/abusimbel/toggle_sx.png"		
-	   onclick="presenter.toggleInstanceVisibility('meshsx', true);"/><br/>
+	   onclick="presenter.toggleInstanceVisibility('meshsx', true);
+				presenter.toggleSpotVisibility('s_0', true);
+	   			presenter.toggleSpotVisibility('h_0', true);"/><br/>
 
 </div>
 	
@@ -360,18 +368,22 @@ function setup3dhop() {
 			"spot1" : { 
 				mesh  : "hotspot_1",
 				color : [0.0, 1, 1.0, 0.4],
+				tags : ["s_0"]
 			 },
 			"spot2" : { 
 				mesh  : "hotspot_2",
 				color : [0.0, 1, 1.0, 0.4],
+				tags : ["s_1"]
 			 },
 			"spot3" : { 
 				mesh  : "hotspot_3",
 				color : [0.0, 1, 1.0, 0.4],
+				tags : ["h_0"]
 			 },
 			"spot4" : { 
 				mesh  : "hotspot_4",
 				color : [0.0, 1, 1.0, 0.4],
+				tags : ["h_1"]
 			 }
 			},
 		
