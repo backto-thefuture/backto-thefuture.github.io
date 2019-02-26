@@ -335,20 +335,6 @@
 
 <script type="text/javascript">
 
-var showspots = false;
-updateSpots() {
-	if(!showspots) {
-		presenter.setSpotVisibility(HOP_ALL, false, true); //redraw
-		return;
-	}
-	var model_1_visible = presenter.isInstanceVisibilityEnabledByName('model_1');
-	var model_2_visible = presenter.isInstanceVisibilityEnabledByName('model_2');
-	presenter.setSpotVisibility('s_1', model_1_visible, true);
-	presenter.setSpotVisibility('h_1', model_1_visible, true);
-	presenter.setSpotVisibility('s_0', model_2_visible, true);
-	presenter.setSpotVisibility('h_0', model_2_visible, true);
-}
-
 var presenter = null;
 
 function setup3dhop() {
@@ -417,6 +403,21 @@ function setup3dhop() {
 			cameraFOV     : 50.0
 		}
 	});
+
+	var showspots = false;
+	updateSpots() {
+		if(!showspots) {
+			presenter.setSpotVisibility(HOP_ALL, false, true); //redraw
+			return;
+		}
+		var model_1_visible = presenter.isInstanceVisibilityEnabledByName('model_1');
+		var model_2_visible = presenter.isInstanceVisibilityEnabledByName('model_2');
+		presenter.setSpotVisibility('s_1', model_1_visible, true);
+		presenter.setSpotVisibility('h_1', model_1_visible, true);
+		presenter.setSpotVisibility('s_0', model_2_visible, true);
+		presenter.setSpotVisibility('h_0', model_2_visible, true);
+	}
+	
 //--MEASURE--
 	presenter._onEndMeasurement = onEndMeasure;
 //--MEASURE--
