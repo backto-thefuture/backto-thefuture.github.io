@@ -288,15 +288,15 @@
   <img id="showdx"
 	   title="Show Part DX"
 	   src="skins/abusimbel/dx.png"
-	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); 			 presenter.setInstanceVisibility('meshdx', true, true);
-				presenter.toggleSpotVisibility('s_1', true);
-				presenter.toggleSpotVisibility('h_1', true);"/><br/>
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false);
+		 					presenter.setInstanceVisibility('meshdx', true, true);
+		 					updateSpots();"/><br/>
 
   <img id="showsx"
 	   title="Show Part SX"
 	   src="skins/abusimbel/sx.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false);
-		 					presenter.setInstanceVisibility('meshdx', true, true);
+		 					presenter.setInstanceVisibility('meshsx', true, true);
 		 					updateSpots();"/><br/>
 
 
@@ -305,15 +305,13 @@
 	   title="Toggle Part DX"
 	   src="skins/abusimbel/toggle_dx.png"
 	   onclick="presenter.toggleInstanceVisibility('meshdx', true);
-				presenter.toggleSpotVisibility('s_1', true);
-				presenter.toggleSpotVisibility('h_1', true);"/><br/>
+							updateSpots();"/><br/>
 
   <img id="togglesx"
 	   title="Toggle Part SX"
 	   src="skins/abusimbel/toggle_sx.png"
 	   onclick="presenter.toggleInstanceVisibility('meshsx', true);
-				presenter.toggleSpotVisibility('s_0', true);
-	   			presenter.toggleSpotVisibility('h_0', true);"/><br/>
+							updateSpots();"/><br/>
 
 </div>
 
@@ -468,7 +466,7 @@ function actionsToolbar(action) {
 //--SECTIONS--
 //--HOTSPOTS--
 	else if(action=='hotspot'|| action=='hotspot_on') { showspots = !showspots; presenter.enableOnHover(!presenter.isOnHoverEnabled()); hotspotSwitch(); }
-//--HOTSPOTS--	
+//--HOTSPOTS--
 }
 //--MEASURE--
 function onEndMeasure(measure) {
