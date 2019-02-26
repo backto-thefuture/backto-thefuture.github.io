@@ -281,22 +281,18 @@
   <img id="hideall"
 	   title="Hide All"
 	   src="skins/abusimbel/hide_all.png"
-	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, true);
-				presenter.toggleSpotVisibility(HOP_ALL, true);"/><br/>
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, true); presenter.toggleSpotVisibility(HOP_ALL, true);"/><br/>
 
 <!--SHOW-PARTS-->
   <img id="showdx"
 	   title="Show Part DX"
 	   src="skins/abusimbel/dx.png"
-	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false);
-		 					presenter.setInstanceVisibility('meshdx', true, true); updateSpots();"/><br/>
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshdx', true, true); updateSpots();"/><br/>
 
   <img id="showsx"
 	   title="Show Part SX"
 	   src="skins/abusimbel/sx.png"
-	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false);
-		 					presenter.setInstanceVisibility('meshsx', true, true); updateSpots();"/><br/>
-
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshsx', true, true); updateSpots();"/><br/>
 
 <!--TOGGLE-PARTS-->
   <img id="toggledx"
@@ -400,6 +396,17 @@ function setup3dhop() {
 		}
 	});
 
+	presenter._onEndMeasurement = onEndMeasure;
+//--MEASURE--
+
+//--POINT PICKING--
+	presenter._onEndPickingPoint = onEndPick;
+//--POINT PICKING--
+
+//--SECTIONS--
+	sectiontoolInit();
+//--SECTIONS--
+
 //--VAR HOTSPOTS--
 	var showspots = false;
 	updateSpots() {
@@ -415,21 +422,6 @@ function setup3dhop() {
 		presenter.setSpotVisibility('h_0', model_2_visible, true);
 	};
 //--VAR HOTSPOTS--
-
-	presenter._onEndMeasurement = onEndMeasure;
-//--MEASURE--
-
-//--POINT PICKING--
-	presenter._onEndPickingPoint = onEndPick;
-//--POINT PICKING--
-
-//--SECTIONS--
-	sectiontoolInit();
-//--SECTIONS--
-
-//--HIDE HOTSPOTS AT START--
-	presenter.setSpotVisibility(HOP_ALL, false, true);
-//--HIDE HOTSPOTS AT START--
 }
 
 function actionsToolbar(action) {
