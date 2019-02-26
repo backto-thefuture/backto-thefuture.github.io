@@ -328,6 +328,22 @@
 <script type="text/javascript">
 
 var presenter = null;
+	
+//--VAR HOTSPOTS--
+	var showspots = false;
+	updateSpots() {
+		if(!showspots) {
+			presenter.setSpotVisibility(HOP_ALL, false, true); //redraw
+			return;
+		}
+		var model_1_visible = presenter.isInstanceVisibilityEnabledByName('model_1');
+		var model_2_visible = presenter.isInstanceVisibilityEnabledByName('model_2');
+		presenter.setSpotVisibility('s_1', model_1_visible, true);
+		presenter.setSpotVisibility('h_1', model_1_visible, true);
+		presenter.setSpotVisibility('s_0', model_2_visible, true);
+		presenter.setSpotVisibility('h_0', model_2_visible, true);
+	};
+//--VAR HOTSPOTS--
 
 function setup3dhop() {
 	presenter = new Presenter("draw-canvas");
@@ -406,23 +422,8 @@ function setup3dhop() {
 //--SECTIONS--
 	sectiontoolInit();
 //--SECTIONS--
-
-//--VAR HOTSPOTS--
-	var showspots = false;
-	updateSpots() {
-		if(!showspots) {
-			presenter.setSpotVisibility(HOP_ALL, false, true); //redraw
-			return;
-		}
-		var model_1_visible = presenter.isInstanceVisibilityEnabledByName('model_1');
-		var model_2_visible = presenter.isInstanceVisibilityEnabledByName('model_2');
-		presenter.setSpotVisibility('s_1', model_1_visible, true);
-		presenter.setSpotVisibility('h_1', model_1_visible, true);
-		presenter.setSpotVisibility('s_0', model_2_visible, true);
-		presenter.setSpotVisibility('h_0', model_2_visible, true);
-	};
-//--VAR HOTSPOTS--
 }
+
 
 function actionsToolbar(action) {
 	if(action=='home') presenter.resetTrackball();
