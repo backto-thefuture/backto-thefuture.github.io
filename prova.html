@@ -406,12 +406,15 @@ function setup3dhop() {
 //--SECTIONS--
 	sectiontoolInit();
 //--SECTIONS--
-}
 
+//--HIDE HOTSPOTS AT START--
+	presenter.setSpotVisibility(HOP_ALL, false, true);
+//--HIDE HOTSPOTS AT START--
+}
 	
 //--VAR HOTSPOTS--
 	var showspots = false;
-	updateSpots() {
+	function updateSpots() {
 		if(!showspots) {
 			presenter.setSpotVisibility(HOP_ALL, false, true); //redraw
 			return;
