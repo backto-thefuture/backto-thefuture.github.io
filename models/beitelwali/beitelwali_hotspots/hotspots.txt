@@ -1,6 +1,0 @@
-hotspots place
-name_h_n
-name_s_n
-
-h_hotspots (geometries complex)
-s_spots (spheres)
