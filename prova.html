@@ -272,38 +272,38 @@
 	 class="tdhop"
 	 onmousedown="if (event.preventDefault) event.preventDefault()">
 
-<!--SHOW-HIDE-ALL-->
-  <img id="showall"
-	   title="Show All"
-	   src="skins/abusimbel/show_all.png"
+<!--SHOW-HIDE-ALL-->	
+  <img id="showall"        
+	   title="Show All"            
+	   src="skins/buttons/show_all.png"	
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, true, true);"/><br/>
-
-  <img id="hideall"
-	   title="Hide All"
-	   src="skins/abusimbel/hide_all.png"
-	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, true); presenter.toggleSpotVisibility(HOP_ALL, true);"/><br/>
+	
+  <img id="hideall"       
+	   title="Hide All"            
+	   src="skins/buttons/hide_all.png"	
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, true);"/><br/>
 
 <!--SHOW-PARTS-->
-  <img id="showdx"
-	   title="Show Part DX"
-	   src="skins/abusimbel/dx.png"
-	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshdx', true, true); updateSpots();"/><br/>
-
-  <img id="showsx"
-	   title="Show Part SX"
-	   src="skins/abusimbel/sx.png"
-	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshsx', true, true); updateSpots();"/><br/>
-
+  <img id="showdx"      
+	   title="Show Right"              
+	   src="skins/buttons/right.png"	
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshright', true, true);"/><br/>
+	
+  <img id="showsx"     
+	   title="Show Left"               
+	   src="skins/buttons/left.png"	
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshleft', true, true);"/><br/>
+	 
 <!--TOGGLE-PARTS-->
-  <img id="toggledx"
-	   title="Toggle Part DX"
-	   src="skins/abusimbel/toggle_dx.png"
-	   onclick="presenter.toggleInstanceVisibility('meshdx', true); updateSpots();"/><br/>
-
-  <img id="togglesx"
-	   title="Toggle Part SX"
-	   src="skins/abusimbel/toggle_sx.png"
-	   onclick="presenter.toggleInstanceVisibility('meshsx', true); updateSpots();"/><br/>
+  <img id="toggledx"      
+	   title="Toggle Right"              
+	   src="skins/buttons/toggle_right.png"		
+	   onclick="presenter.toggleInstanceVisibility('meshright', true);"/><br/>
+	
+  <img id="togglesx"     
+	   title="Toggle Left"               
+	   src="skins/buttons/toggle_left.png"		
+	   onclick="presenter.toggleInstanceVisibility('meshleft', true);"/><br/>
 
 </div>
 
@@ -334,8 +334,8 @@ function setup3dhop() {
 
 	presenter.setScene({
 		meshes: {
-			"mesh_1" : { url: "models/04_abusimbel/DXABUSIMBELmeshmixer.nxz" },
-			"mesh_2" : { url: "models/04_abusimbel/SXABUSIMBELmeshmixer.nxz" },
+			"mesh_r" : { url: "models/04_abusimbel/DXABUSIMBELmeshmixer.nxz" },
+			"mesh_l" : { url: "models/04_abusimbel/SXABUSIMBELmeshmixer.nxz" },
 			"hotspot_1" : { url: "models/04_abusimbel/abusimbel_hotspots/abusimbel_s_0.ply" },
 			"hotspot_2" : { url: "models/04_abusimbel/abusimbel_hotspots/abusimbel_s_1.ply" },
 			"hotspot_3" : { url: "models/04_abusimbel/abusimbel_hotspots/abusimbel_h_0.ply" },
@@ -343,16 +343,16 @@ function setup3dhop() {
 		},
 
 		modelInstances : {
-			"model_1" : {
-				mesh  : "mesh_1",
+			"model_r" : {
+				mesh  : "mesh_r",
 				color : [0.8, 0.7, 0.75],
-				tags : ["meshdx"]
+				tags : ["meshright"]
 			},
 
-			"model_2" : {
-				mesh  : "mesh_2",
+			"model_l" : {
+				mesh  : "mesh_l",
 				color : [0.8, 0.7, 0.75],
-				tags : ["meshsx"]
+				tags : ["meshleft"]
 			}
 		},
 

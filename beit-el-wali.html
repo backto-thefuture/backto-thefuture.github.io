@@ -275,35 +275,35 @@
 <!--SHOW-HIDE-ALL-->	
   <img id="showall"        
 	   title="Show All"            
-	   src="skins/abusimbel/show_all.png"	
+	   src="skins/buttons/show_all.png"	
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, true, true);"/><br/>
 	
   <img id="hideall"       
 	   title="Hide All"            
-	   src="skins/abusimbel/hide_all.png"	
+	   src="skins/buttons/hide_all.png"	
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, true);"/><br/>
 
 <!--SHOW-PARTS-->
   <img id="showdx"      
-	   title="Show Part DX"              
-	   src="skins/abusimbel/dx.png"	
-	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshdx', true, true);"/><br/>
+	   title="Show Right"              
+	   src="skins/buttons/right.png"	
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshright', true, true);"/><br/>
 	
   <img id="showsx"     
-	   title="Show Part SX"               
-	   src="skins/abusimbel/sx.png"	
-	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshsx', true, true);"/><br/>
+	   title="Show Left"               
+	   src="skins/buttons/left.png"	
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshleft', true, true);"/><br/>
 	 
 <!--TOGGLE-PARTS-->
   <img id="toggledx"      
-	   title="Toggle Part DX"              
-	   src="skins/abusimbel/toggle_dx.png"		
-	   onclick="presenter.toggleInstanceVisibility('meshdx', true);"/><br/>
+	   title="Toggle Right"              
+	   src="skins/buttons/toggle_right.png"		
+	   onclick="presenter.toggleInstanceVisibility('meshright', true);"/><br/>
 	
   <img id="togglesx"     
-	   title="Toggle Part SX"               
-	   src="skins/abusimbel/toggle_sx.png"		
-	   onclick="presenter.toggleInstanceVisibility('meshsx', true);"/><br/>
+	   title="Toggle Left"               
+	   src="skins/buttons/toggle_left.png"		
+	   onclick="presenter.toggleInstanceVisibility('meshleft', true);"/><br/>
 
 </div>
 	
@@ -314,7 +314,7 @@
 	<p1>ID:</p1><p2>Cat.7103</p2><br/>
 	<p1>Material:</p1><p2>Painted wood</p2><br/>
 	<p1>Period:</p1><p2>About 1820</p2><br/>
-	<p1>Number of parts:</p1><p2>2</p2><br/>
+	<p1>Number of elements:</p1><p2>2</p2><br/>
 	<p1>Right Size:</p1><p2>27.06x28.56x67.23cm</p2><br/>
 	<p1>Left Size:</p1><p2>27.17x29.17x68.01cm</p2><br/>
 	</div>		
@@ -335,21 +335,21 @@ function setup3dhop() {
 
 	presenter.setScene({
 		meshes: {
-			"mesh_1" : { url: "models/03_beitelwali/03_r.nxz" },
-			"mesh_2" : { url: "models/03_beitelwali/03_l.nxz" }
+			"mesh_r" : { url: "models/03_beitelwali/03_r.nxz" },
+			"mesh_l" : { url: "models/03_beitelwali/03_l.nxz" }
 				},
 		
 		modelInstances : {
-			"model_1" : { 
-				mesh  : "mesh_1",
+			"model_r" : { 
+				mesh  : "mesh_r",
 				color : [0.8, 0.7, 0.75],
-				tags : ["meshdx"]
+				tags : ["meshright"]
 			},
 			
-			"model_2" : { 
-				mesh  : "mesh_2",
+			"model_l" : { 
+				mesh  : "mesh_l",
 				color : [0.8, 0.7, 0.75],
-				tags : ["meshsx"]
+				tags : ["meshleft"]
 			}
 
 		},
