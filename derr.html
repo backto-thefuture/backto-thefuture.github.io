@@ -266,13 +266,57 @@
 <!--SECTIONS-->
 <!--END-TOOLBAR-->
 	
+<!--START-BOOKMARKS-TOOLBAR-->
+
+<div id="bookmarksToolbar" 
+	 class="tdhop" 
+	 onmousedown="if (event.preventDefault) event.preventDefault()">
+					
+<!--SHOW-HIDE-ALL-->	
+  <img id="showall"        
+	   title="Show All"            
+	   src="skins/buttons/show_all.png"	
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, true, true);"/><br/>
+	
+  <img id="hideall"       
+	   title="Hide All"            
+	   src="skins/buttons/hide_all.png"	
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, true);"/><br/>
+
+<!--SHOW-PARTS-->
+  <img id="showdx"      
+	   title="Show Right"              
+	   src="skins/buttons/right.png"	
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshright', true, true);"/><br/>
+	
+  <img id="showsx"     
+	   title="Show Left"               
+	   src="skins/buttons/left.png"	
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshleft', true, true);"/><br/>
+	 
+<!--TOGGLE-PARTS-->
+  <img id="toggledx"      
+	   title="Toggle Right"              
+	   src="skins/buttons/toggle_right.png"		
+	   onclick="presenter.toggleInstanceVisibility('meshright', true);"/><br/>
+	
+  <img id="togglesx"     
+	   title="Toggle Left"               
+	   src="skins/buttons/toggle_left.png"		
+	   onclick="presenter.toggleInstanceVisibility('meshleft', true);"/><br/>
+
+</div>
+	
+<!--END-BOOKMARKS-TOOLBAR-->
+
 <div id="DBinfo">
-	<h4>Model of the Temple of Debod (Portals)</h4>
-	<p1>ID:</p1><p2>Cat.7111</p2><br/>
+	<h4>Model of the Temple of Derr</h4>
+	<p1>ID:</p1><p2>Cat.7112</p2><br/>
 	<p1>Material:</p1><p2>Painted wood</p2><br/>
 	<p1>Period:</p1><p2>About 1820</p2><br/>
-	<p1>Number of elements:</p1><p2>1</p2><br/>
-	<p1>Size:</p1><p2>33.27x38.65x92.45cm</p2><br/>
+	<p1>Number of elements:</p1><p2>2</p2><br/>
+	<p1>Right Size:</p1><p2>xxcm</p2><br/>
+	<p1>Left Size:</p1><p2>xxcm</p2><br/>
 	</div>		
 	
 </div>
@@ -291,14 +335,21 @@ function setup3dhop() {
 
 	presenter.setScene({
 		meshes: {
-			"mesh_f" : { url: "models/05_portals/05_f.nxz" }
+			"mesh_r" : { url: "models/10_derr/10_r.nxz" },
+			"mesh_l" : { url: "models/10_derr/10_l.nxz" }
 				},
 		
 		modelInstances : {
-			"model_f" : { 
-				mesh  : "mesh_f",
+			"model_r" : { 
+				mesh  : "mesh_r",
 				color : [0.8, 0.7, 0.75],
-				tags : ["meshfront"]
+				tags : ["meshright"]
+			},
+			
+			"model_l" : { 
+				mesh  : "mesh_l",
+				color : [0.8, 0.7, 0.75],
+				tags : ["meshleft"]
 			}
 
 		},
