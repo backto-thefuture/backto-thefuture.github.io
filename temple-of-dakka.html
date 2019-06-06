@@ -286,25 +286,34 @@
 <!--SHOW-PARTS-->
   <img id="showdx"      
 	   title="Show Right"              
-	   src="skins/buttons/right.png"	
+	   src="skins/buttons/t_right.png"	
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshright', true, true);"/><br/>
 	
   <img id="showsx"     
 	   title="Show Left"               
-	   src="skins/buttons/left.png"	
+	   src="skins/buttons/t_left.png"	
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshleft', true, true);"/><br/>
+	
+  <img id="showfront"      
+	   title="Show Front"              
+	   src="skins/buttons/t_front.png"	
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshfront', true, true);"/><br/>
 	 
 <!--TOGGLE-PARTS-->
   <img id="toggledx"      
 	   title="Toggle Right"              
-	   src="skins/buttons/toggle_right.png"		
+	   src="skins/buttons/toggle_t_right.png"		
 	   onclick="presenter.toggleInstanceVisibility('meshright', true);"/><br/>
 	
   <img id="togglesx"     
 	   title="Toggle Left"               
-	   src="skins/buttons/toggle_left.png"		
+	   src="skins/buttons/toggle_t_left.png"		
 	   onclick="presenter.toggleInstanceVisibility('meshleft', true);"/><br/>
 
+  <img id="togglefront"      
+	   title="Toggle Front"              
+	   src="skins/buttons/toggle_t_front.png"		
+	   onclick="presenter.toggleInstanceVisibility('meshfront', true);"/><br/>
 </div>
 	
 <!--END-BOOKMARKS-TOOLBAR-->
@@ -335,8 +344,9 @@ function setup3dhop() {
 
 	presenter.setScene({
 		meshes: {
-			"mesh_r" : { url: "models/01_dakka/DX_DAKKA.nxz" },
-			"mesh_l" : { url: "models/01_dakka/01_l.nxz" }
+			"mesh_r" : { url: "models/01_temple_dakka/01_r_tot.nxz" },
+			"mesh_l" : { url: "models/01_temple_dakka/01_l_tot.nxz" },
+			"mesh_f" : { url: "models/01_temple_dakka/01_f_tot.nxz" }
 				},
 		
 		modelInstances : {
@@ -350,6 +360,12 @@ function setup3dhop() {
 				mesh  : "mesh_l",
 				color : [0.8, 0.7, 0.75],
 				tags : ["meshleft"]
+			},
+			
+			"model_f" : { 
+				mesh  : "mesh_f",
+				color : [0.8, 0.7, 0.75],
+				tags : ["meshfront"]
 			}
 
 		},
@@ -357,9 +373,9 @@ function setup3dhop() {
 		trackball: {
 			type : TurntablePanTrackball,
 			trackOptions : {
-				startPhi: 0,
-				startTheta: 15,
-				startDistance: 2.5,
+				startPhi: -35,
+				startTheta: -1,
+				startDistance: 3,
 				minMaxPhi: [-180, 180],
 				minMaxTheta: [-10.0, 50.0],
 				minMaxDist: [0.5, 3.0]
@@ -367,7 +383,7 @@ function setup3dhop() {
 		},
 		space : {
 			centerMode: "scene",
-			cameraFOV     : 50.0
+			cameraFOV     : 65.0
 		}
 	});
 //--MEASURE--
