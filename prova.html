@@ -272,37 +272,37 @@
 	 class="tdhop"
 	 onmousedown="if (event.preventDefault) event.preventDefault()">
 
-<!--SHOW-HIDE-ALL-->	
-  <img id="showall"        
-	   title="Show All"            
-	   src="skins/buttons/show_all.png"	
+<!--SHOW-HIDE-ALL-->
+  <img id="showall"
+	   title="Show All"
+	   src="skins/buttons/show_all.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, true, true);"/><br/>
-	
-  <img id="hideall"       
-	   title="Hide All"            
-	   src="skins/buttons/hide_all.png"	
+
+  <img id="hideall"
+	   title="Hide All"
+	   src="skins/buttons/hide_all.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, true);"/><br/>
 
 <!--SHOW-PARTS-->
-  <img id="showdx"      
-	   title="Show Right"              
-	   src="skins/buttons/right.png"	
+  <img id="showdx"
+	   title="Show Right"
+	   src="skins/buttons/right.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshright', true, true);"/><br/>
-	
-  <img id="showsx"     
-	   title="Show Left"               
-	   src="skins/buttons/left.png"	
+
+  <img id="showsx"
+	   title="Show Left"
+	   src="skins/buttons/left.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshleft', true, true);"/><br/>
-	 
+
 <!--TOGGLE-PARTS-->
-  <img id="toggledx"      
-	   title="Toggle Right"              
-	   src="skins/buttons/toggle_right.png"		
+  <img id="toggledx"
+	   title="Toggle Right"
+	   src="skins/buttons/toggle_right.png"
 	   onclick="presenter.toggleInstanceVisibility('meshright', true);"/><br/>
-	
-  <img id="togglesx"     
-	   title="Toggle Left"               
-	   src="skins/buttons/toggle_left.png"		
+
+  <img id="togglesx"
+	   title="Toggle Left"
+	   src="skins/buttons/toggle_left.png"
 	   onclick="presenter.toggleInstanceVisibility('meshleft', true);"/><br/>
 
 </div>
@@ -386,7 +386,7 @@ function setup3dhop() {
 				startTheta: 15.0,
 				startDistance: 2.5,
 				minMaxPhi: [-180, 180],
-				minMaxTheta: [-10.0, 50.0],
+				minMaxTheta: [0, 180.0],
 				minMaxDist: [0.5, 3.0]
 			}
 		},
@@ -406,7 +406,7 @@ function setup3dhop() {
 //--SECTIONS--
 	sectiontoolInit();
 //--SECTIONS--
-	
+
 //--LIGHTING--
 	presenter.enableSceneLighting(false);
 //--LIGHTING--
@@ -415,7 +415,7 @@ function setup3dhop() {
 	presenter.setSpotVisibility(HOP_ALL, false, true);
 //--HIDE HOTSPOTS AT START--
 }
-	
+
 //--VAR HOTSPOTS--
 	var showspots = false;
 	function updateSpots() {

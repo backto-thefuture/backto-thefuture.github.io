@@ -22,11 +22,11 @@
 <script type="text/javascript" src="js/trackball_sphere.js"></script>
 <!--UTILITY-->
 <script type="text/javascript" src="js/init.js"></script>
-	
+
 </head>
 
-<!--START-HEADER-->	
-	
+<!--START-HEADER-->
+
 <header>
 	<a class="logo" title="backtothefuture" href="https://backto-thefuture.github.io/"><span>Back to the future</span></a>
 	<div class="back">
@@ -37,13 +37,13 @@
 </header>
 
 <!--END-HEADER-->
-					
+
 <body>
 <div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
-	
+
 	<div id="tdhlg"></div>
 <!--START-TOOLBAR-->
-	
+
  <div id="toolbar">
   <img id="home"        title="Home"                   src="skins/dark/home.png"/><br/>
 
@@ -51,42 +51,42 @@
   <img id="zoomin"      title="Zoom In"                src="skins/dark/zoomin.png"/><br/>
   <img id="zoomout"     title="Zoom Out"               src="skins/dark/zoomout.png"/><br/>
 <!--ZOOM-->
-	 
+
 <!--LIGHTING-->
   <img id="lighting_off" title="Enable Lighting"       src="skins/dark/lighting_off.png" style="position:absolute; visibility:hidden;"/>
   <img id="lighting"     title="Disable Lighting"      src="skins/dark/lighting.png"/><br/>
 <!--LIGHTING-->
-	 
+
 <!--LIGHT-->
   <img id="light_on"    title="Disable Light Control"  src="skins/dark/lightcontrol_on.png" style="position:absolute; visibility:hidden;"/>
   <img id="light"       title="Enable Light Control"   src="skins/dark/lightcontrol.png"/><br/>
 <!--LIGHT-->
-	 
+
 <!--MEASURE-->
   <img id="measure_on"  title="Disable Measure Tool"   src="skins/dark/measure_on.png" style="position:absolute; visibility:hidden;"/>
   <img id="measure"     title="Enable Measure Tool"    src="skins/dark/measure.png"/><br/>
 <!--MEASURE-->
-	 
+
 <!--POINT PICKING-->
   <img id="pick_on"     title="Disable PickPoint Mode" src="skins/dark/pick_on.png" style="position:absolute; visibility:hidden;"/>
   <img id="pick"        title="Enable PickPoint Mode"  src="skins/dark/pick.png"/><br/>
 <!--POINT PICKING-->
-	 
+
 <!--SECTIONS-->
   <img id="sections_on" title="Disable Plane Sections" src="skins/dark/sections_on.png" style="position:absolute; visibility:hidden;"/>
   <img id="sections"    title="Enable Plane Sections"  src="skins/dark/sections.png"/><br/>
 <!--SECTIONS-->
-	 
+
 <!--COLOR-->
   <img id="color_on"    title="Disable Solid Color"    src="skins/dark/color_on.png" style="position:absolute; visibility:hidden;"/>
   <img id="color"       title="Enable Solid Color"     src="skins/dark/color.png"/><br/>
 <!--COLOR-->
-	 
+
 <!--CAMERA-->
   <img id="perspective"  title="Perspective Camera"    src="skins/dark/perspective.png" style="position:absolute; visibility:hidden;"/>
   <img id="orthographic" title="Orthographic Camera"   src="skins/dark/orthographic.png"/><br/>
 <!--CAMERA-->
-	 
+
 <!--FULLSCREEN-->
 <!--  <img id="full_on"     title="Exit Full Screen"       src="skins/dark/full_on.png" style="position:absolute; visibility:hidden;"/>
   <img id="full"        title="Full Screen"            src="skins/dark/full.png"/>-->
@@ -127,46 +127,46 @@
  </div>
 <!--SECTIONS-->
 <!--END-TOOLBAR-->
-	
+
 <!--START-BOOKMARKS-TOOLBAR-->
 
 <div id="bookmarksToolbar" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
-					
-<!--SHOW-HIDE-ALL-->	
-  <img id="showall"        
-	   title="Show All"            
-	   src="skins/buttons/show_all.png"	
+
+<!--SHOW-HIDE-ALL-->
+  <img id="showall"
+	   title="Show All"
+	   src="skins/buttons/show_all.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, true, true);"/><br/>
-	
-  <img id="hideall"       
-	   title="Hide All"            
-	   src="skins/buttons/hide_all.png"	
+
+  <img id="hideall"
+	   title="Hide All"
+	   src="skins/buttons/hide_all.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, true);"/><br/>
 
 <!--SHOW-PARTS-->
-  <img id="showdx"      
-	   title="Show Right"              
-	   src="skins/buttons/right.png"	
+  <img id="showdx"
+	   title="Show Right"
+	   src="skins/buttons/right.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshright', true, true);"/><br/>
-	
-  <img id="showsx"     
-	   title="Show Left"               
-	   src="skins/buttons/left.png"	
+
+  <img id="showsx"
+	   title="Show Left"
+	   src="skins/buttons/left.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshleft', true, true);"/><br/>
-	 
+
 <!--TOGGLE-PARTS-->
-  <img id="toggledx"      
-	   title="Toggle Right"              
-	   src="skins/buttons/toggle_right.png"		
+  <img id="toggledx"
+	   title="Toggle Right"
+	   src="skins/buttons/toggle_right.png"
 	   onclick="presenter.toggleInstanceVisibility('meshright', true);"/><br/>
-	
-  <img id="togglesx"     
-	   title="Toggle Left"               
-	   src="skins/buttons/toggle_left.png"		
+
+  <img id="togglesx"
+	   title="Toggle Left"
+	   src="skins/buttons/toggle_left.png"
 	   onclick="presenter.toggleInstanceVisibility('meshleft', true);"/><br/>
 
 </div>
-	
+
 <!--END-BOOKMARKS-TOOLBAR-->
 
 <div id="DBinfo">
@@ -176,11 +176,11 @@
 	<p1>Number of parts:&nbsp;</p1><p2>2</p2><br/>
 	<p1>Dimension Part I:&nbsp;</p1><p2>57x81x33cm</p2><br/>
 	<p1>Dimension Part II:&nbsp;</p1><p2>57x81x33cm</p2><br/>
-	</div>		
-	
+	</div>
+
 </div>
-	
-	
+
+
 <canvas id="draw-canvas" style="background-color: #F0F0F0"/>
 
 
@@ -201,13 +201,13 @@ function setup3dhop() {
 			"mesh_l" : { url: "models/04_abusimbel/SXABUSIMBELmeshmixer.nxz" }
 		},
 		modelInstances : {
-			"model_r" : { 
+			"model_r" : {
 				mesh  : "mesh_r",
 				color : [0.8, 0.7, 0.75],
 				tags : ["meshright"]
 			},
-			
-			"model_l" : { 
+
+			"model_l" : {
 				mesh  : "mesh_l",
 				color : [0.8, 0.7, 0.75],
 				tags : ["meshleft"]
@@ -220,7 +220,7 @@ function setup3dhop() {
 				startTheta: 15.0,
 				startDistance: 2.5,
 				minMaxPhi: [-180, 180],
-				minMaxTheta: [-10.0, 50.0],
+				minMaxTheta: [0, 180.0],
 				minMaxDist: [0.5, 3.0]
 			}
 		}
@@ -237,7 +237,7 @@ function setup3dhop() {
 //--SECTIONS--
 	sectiontoolInit();
 //--SECTIONS--
-	
+
 //--LIGHTING--
 	presenter.enableSceneLighting(false);
 //--LIGHTING--
@@ -273,34 +273,34 @@ function actionsToolbar(action) {
 //--SECTIONS--
 	else if(action=='sections' || action=='sections_on') { sectiontoolReset(); sectiontoolSwitch(); }
 //--SECTIONS--
-}	
+}
 
 
 //--MEASURE--
 function onEndMeasure(measure) {
 	// measure.toFixed(2) sets the number of decimals when displaying the measure
 	// depending on the model measure units, use "mm","m","km" or whatever you have
-	$('#measure-output').html(measure.toFixed(2) + "cm"); 
+	$('#measure-output').html(measure.toFixed(2) + "cm");
 }
 //--MEASURE--
 
 //--PICKPOINT--
 function onEndPick(point) {
-	// .toFixed(2) sets the number of decimals when displaying the picked point	
+	// .toFixed(2) sets the number of decimals when displaying the picked point
 	var x = point[0].toFixed(2);
 	var y = point[1].toFixed(2);
 	var z = point[2].toFixed(2);
     $('#pickpoint-output').html("[ "+x+" , "+y+" , "+z+" ]");
-} 
-//--PICKPOINT--	
+}
+//--PICKPOINT--
 
 $(document).ready(function(){
 	init3dhop();
 
 	setup3dhop();
-	
+
 	resizeCanvas (1000,750);
-		
+
 });
 </script>
 </html>

@@ -22,11 +22,11 @@
 <script type="text/javascript" src="js/trackball_sphere.js"></script>
 <!--UTILITY-->
 <script type="text/javascript" src="js/init.js"></script>
-	
+
 </head>
 
-<!--START-HEADER-->	
-	
+<!--START-HEADER-->
+
 <header>
 	<a class="logo" title="backtothefuture" href="https://backto-thefuture.github.io/"><span>Back to the future</span></a>
 	<div class="back">
@@ -37,117 +37,117 @@
 </header>
 
 <!--END-HEADER-->
-					
+
 <body>
 <div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
-	
+
 	<div id="tdhlg"></div>
-	
+
 <!--START-TOOLBAR-->
-	
+
  <div id="toolbar">
-  <img id="home"        
-	   title="Home"                   
+  <img id="home"
+	   title="Home"
 	   src="skins/dark/home.png"/><br/>
 
 <!--ZOOM-->
-  <img id="zoomin"      
-	   title="Zoom In"               
+  <img id="zoomin"
+	   title="Zoom In"
 	   src="skins/dark/zoomin.png"/><br/>
-	 
-  <img id="zoomout"     
-	   title="Zoom Out"               
+
+  <img id="zoomout"
+	   title="Zoom Out"
 	   src="skins/dark/zoomout.png"/><br/>
 <!--ZOOM-->
-	 
+
 <!--LIGHTING-->
-  <img id="lighting_off" 
-	   title="Enable Lighting"       
-	   src="skins/dark/lighting_off.png" 
+  <img id="lighting_off"
+	   title="Enable Lighting"
+	   src="skins/dark/lighting_off.png"
 	   style="position:absolute; visibility:hidden;"/>
-	 
-  <img id="lighting"     
-	   title="Disable Lighting"      
+
+  <img id="lighting"
+	   title="Disable Lighting"
 	   src="skins/dark/lighting.png"/><br/>
 <!--LIGHTING-->
-	 
+
 <!--LIGHT-->
-  <img id="light_on"    
-	   title="Disable Light Control" 
-	   src="skins/dark/lightcontrol_on.png" 
+  <img id="light_on"
+	   title="Disable Light Control"
+	   src="skins/dark/lightcontrol_on.png"
 	   style="position:absolute; visibility:hidden;"/>
-	 
-  <img id="light"       
-	   title="Enable Light Control"   
+
+  <img id="light"
+	   title="Enable Light Control"
 	   src="skins/dark/lightcontrol.png"/><br/>
 <!--LIGHT-->
-	 
+
 <!--HOTSPOT-->
-  <img id="hotspot_on" 
-	   title="Hide Hotspots" 
-	   src="skins/dark/pin_on.png" 
+  <img id="hotspot_on"
+	   title="Hide Hotspots"
+	   src="skins/dark/pin_on.png"
 	   style="position: absolute; visibility: hidden;">
-	
-  <img id="hotspot" 
-	   title="Show Hotspots" 
-	   src="skins/dark/pin.png"	/><br/>	 
-<!--HOTSPOT-->	 
-	 
+
+  <img id="hotspot"
+	   title="Show Hotspots"
+	   src="skins/dark/pin.png"	/><br/>
+<!--HOTSPOT-->
+
 <!--MEASURE-->
-  <img id="measure_on"  
-	   title="Disable Measure Tool"   
-	   src="skins/dark/measure_on.png" 
+  <img id="measure_on"
+	   title="Disable Measure Tool"
+	   src="skins/dark/measure_on.png"
 	   style="position:absolute; visibility:hidden;"/>
-	 
-  <img id="measure"     
-	   title="Enable Measure Tool"    
+
+  <img id="measure"
+	   title="Enable Measure Tool"
 	   src="skins/dark/measure.png"/><br/>
 <!--MEASURE-->
-	 
+
 <!--POINT PICKING-->
-  <img id="pick_on"     
-	   title="Disable PickPoint Mode" 
-	   src="skins/dark/pick_on.png" 
+  <img id="pick_on"
+	   title="Disable PickPoint Mode"
+	   src="skins/dark/pick_on.png"
 	   style="position:absolute; visibility:hidden;"/>
-	 
-  <img id="pick"        
-	   title="Enable PickPoint Mode"  
+
+  <img id="pick"
+	   title="Enable PickPoint Mode"
 	   src="skins/dark/pick.png"/><br/>
 <!--POINT PICKING-->
-	 
+
 <!--SECTIONS-->
-  <img id="sections_on" 
-	   title="Disable Plane Sections" 
-	   src="skins/dark/sections_on.png" 
+  <img id="sections_on"
+	   title="Disable Plane Sections"
+	   src="skins/dark/sections_on.png"
 	   style="position:absolute; visibility:hidden;"/>
-	 
-  <img id="sections"    
-	   title="Enable Plane Sections"  
+
+  <img id="sections"
+	   title="Enable Plane Sections"
 	   src="skins/dark/sections.png"/><br/>
 <!--SECTIONS-->
-	 
+
 <!--COLOR-->
-  <img id="color_on"    
-	   title="Disable Solid Color"    
-	   src="skins/dark/color_on.png" 
+  <img id="color_on"
+	   title="Disable Solid Color"
+	   src="skins/dark/color_on.png"
 	   style="position:absolute; visibility:hidden;"/>
-	 
-  <img id="color"       
-	   title="Enable Solid Color"     
+
+  <img id="color"
+	   title="Enable Solid Color"
 	   src="skins/dark/color.png"/><br/>
 <!--COLOR-->
-	 
+
 <!--CAMERA-->
-  <img id="perspective"  
-	   title="Perspective Camera"    
-	   src="skins/dark/perspective.png" 
+  <img id="perspective"
+	   title="Perspective Camera"
+	   src="skins/dark/perspective.png"
 	   style="position:absolute; visibility:hidden;"/>
-	 
-  <img id="orthographic" 
-	   title="Orthographic Camera"   
+
+  <img id="orthographic"
+	   title="Orthographic Camera"
 	   src="skins/dark/orthographic.png"/><br/>
 <!--CAMERA-->
-	 
+
 <!--FULLSCREEN-->
 <!--  <img id="full_on"     title="Exit Full Screen"       src="skins/dark/full_on.png" style="position:absolute; visibility:hidden;"/>
   <img id="full"        title="Full Screen"            src="skins/dark/full.png"/>-->
@@ -155,18 +155,18 @@
  </div>
 
 <!--MEASURE-->
- <div id="measure-box" 
+ <div id="measure-box"
 	  class="output-box">Measured length<hr/>
-	 <span id="measure-output" 
-		   class="output-text" 
+	 <span id="measure-output"
+		   class="output-text"
 		   onmousedown="event.stopPropagation()">0.0</span></div>
 <!--MEASURE-->
 
 <!--POINT PICKING-->
- <div id="pickpoint-box" 
+ <div id="pickpoint-box"
 	  class="output-box">XYZ picked point<hr/>
-	 <span id="pickpoint-output" 
-		   class="output-text" 
+	 <span id="pickpoint-output"
+		   class="output-text"
 		   onmousedown="event.stopPropagation()">[ 0 , 0 , 0 ]</span></div>
 <!--POINT PICKING-->
 
@@ -175,138 +175,138 @@
   <table class="output-table" onmousedown="event.stopPropagation()">
 	<tr><td>Plane</td><td>Position</td><td>Flip</td></tr>
 	<tr>
-		<td><img   id="xplane_on"    
-				 title="Disable X Axis Section" 
-				 src="skins/icons/sectionX_on.png" 
-				 onclick="sectionxSwitch()" 
+		<td><img   id="xplane_on"
+				 title="Disable X Axis Section"
+				 src="skins/icons/sectionX_on.png"
+				 onclick="sectionxSwitch()"
 				 style="position:absolute; visibility:hidden; border:1px inset;"/>
-			
-			<img   id="xplane"       
-				 title="Enable X Axis Section"  
-				 src="skins/icons/sectionX.png"  
+
+			<img   id="xplane"
+				 title="Enable X Axis Section"
+				 src="skins/icons/sectionX.png"
 				 onclick="sectionxSwitch()"/><br/></td>
-		
-		<td><input id="xplaneSlider" 
-				   class="output-input"  
-				   type="range"    
+
+		<td><input id="xplaneSlider"
+				   class="output-input"
+				   type="range"
 				   title="Move X Axis Section Position"/></td>
-		
-		<td><input id="xplaneFlip"   
-				   class="output-input"  
-				   type="checkbox" 
+
+		<td><input id="xplaneFlip"
+				   class="output-input"
+				   type="checkbox"
 				   title="Flip X Axis Section Direction"/></td>
 	  </tr>
-	  
+
 	  <tr>
-		<td><img   id="yplane_on"    
-				 title="Disable Y Axis Section" 
-				 src="skins/icons/sectionY_on.png" 
-				 onclick="sectionySwitch()" 
+		<td><img   id="yplane_on"
+				 title="Disable Y Axis Section"
+				 src="skins/icons/sectionY_on.png"
+				 onclick="sectionySwitch()"
 				 style="position:absolute; visibility:hidden; border:1px inset;"/>
-			
-			<img   id="yplane"       
-				 title="Enable Y Axis Section"  
-				 src="skins/icons/sectionY.png"  
+
+			<img   id="yplane"
+				 title="Enable Y Axis Section"
+				 src="skins/icons/sectionY.png"
 				 onclick="sectionySwitch()"/><br/></td>
-		  
-		<td><input id="yplaneSlider" 
-				   class="output-input"  
-				   type="range"    
+
+		<td><input id="yplaneSlider"
+				   class="output-input"
+				   type="range"
 				   title="Move Y Axis Section Position"/></td>
-		  
-		<td><input id="yplaneFlip"   
-				   class="output-input"  
-				   type="checkbox" 
+
+		<td><input id="yplaneFlip"
+				   class="output-input"
+				   type="checkbox"
 				   title="Flip Y Axis Section Direction"/></td>
 	  </tr>
-	  
+
 	  <tr>
-		<td><img   id="zplane_on"    
-				 title="Disable Z Axis Section" 
-				 src="skins/icons/sectionZ_on.png" 
-				 onclick="sectionzSwitch()" 
+		<td><img   id="zplane_on"
+				 title="Disable Z Axis Section"
+				 src="skins/icons/sectionZ_on.png"
+				 onclick="sectionzSwitch()"
 				 style="position:absolute; visibility:hidden; border:1px inset;"/>
-			
-			<img   id="zplane"       
-				 title="Enable Z Axis Section"  
-				 src="skins/icons/sectionZ.png"  
+
+			<img   id="zplane"
+				 title="Enable Z Axis Section"
+				 src="skins/icons/sectionZ.png"
 				 onclick="sectionzSwitch()"/><br/></td>
-		  
-		<td><input id="zplaneSlider" 
-				   class="output-input"  
-				   type="range"    
+
+		<td><input id="zplaneSlider"
+				   class="output-input"
+				   type="range"
 				   title="Move Y Axis Section Position"/></td>
-		  
-		<td><input id="zplaneFlip"   
-				   class="output-input"  
-				   type="checkbox" 
+
+		<td><input id="zplaneFlip"
+				   class="output-input"
+				   type="checkbox"
 				   title="Flip Z Axis Section Direction"/></td>
 	  </tr>
 	 </table>
-	 
-  	 <table class="output-table" 
-			onmousedown="event.stopPropagation()" 
+
+  	 <table class="output-table"
+			onmousedown="event.stopPropagation()"
 			style="text-align:right;">
-		 
+
 	<tr>
-		<td>Show planes<input id="showPlane" 
-							  class="output-input" 
-							  type="checkbox" 
-							  title="Show Section Planes" 
+		<td>Show planes<input id="showPlane"
+							  class="output-input"
+							  type="checkbox"
+							  title="Show Section Planes"
 							  style="bottom:-3px;"/></td>
-		
-		<td>Show edges<input  id="showBorder" 
-						  class="output-input" 
-						  type="checkbox" 
-						  title="Show Section Edges" 
+
+		<td>Show edges<input  id="showBorder"
+						  class="output-input"
+						  type="checkbox"
+						  title="Show Section Edges"
 						  style="bottom:-3px;"/></td>
 	</tr>
 	 </table>
  </div>
 <!--SECTIONS-->
 <!--END-TOOLBAR-->
-	
+
 <!--START-BOOKMARKS-TOOLBAR-->
 
-<div id="bookmarksToolbar" 
-	 class="tdhop" 
+<div id="bookmarksToolbar"
+	 class="tdhop"
 	 onmousedown="if (event.preventDefault) event.preventDefault()">
-					
-<!--SHOW-HIDE-ALL-->	
-  <img id="showall"        
-	   title="Show All"            
-	   src="skins/buttons/show_all.png"	
+
+<!--SHOW-HIDE-ALL-->
+  <img id="showall"
+	   title="Show All"
+	   src="skins/buttons/show_all.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, true, true);"/><br/>
-	
-  <img id="hideall"       
-	   title="Hide All"            
-	   src="skins/buttons/hide_all.png"	
+
+  <img id="hideall"
+	   title="Hide All"
+	   src="skins/buttons/hide_all.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, true);"/><br/>
 
 <!--SHOW-PARTS-->
-  <img id="showdx"      
-	   title="Show Right"              
-	   src="skins/buttons/right.png"	
+  <img id="showdx"
+	   title="Show Right"
+	   src="skins/buttons/right.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshright', true, true);"/><br/>
-	
-  <img id="showsx"     
-	   title="Show Left"               
-	   src="skins/buttons/left.png"	
+
+  <img id="showsx"
+	   title="Show Left"
+	   src="skins/buttons/left.png"
 	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshleft', true, true);"/><br/>
-	 
+
 <!--TOGGLE-PARTS-->
-  <img id="toggledx"      
-	   title="Toggle Right"              
-	   src="skins/buttons/toggle_right.png"		
+  <img id="toggledx"
+	   title="Toggle Right"
+	   src="skins/buttons/toggle_right.png"
 	   onclick="presenter.toggleInstanceVisibility('meshright', true);"/><br/>
-	
-  <img id="togglesx"     
-	   title="Toggle Left"               
-	   src="skins/buttons/toggle_left.png"		
+
+  <img id="togglesx"
+	   title="Toggle Left"
+	   src="skins/buttons/toggle_left.png"
 	   onclick="presenter.toggleInstanceVisibility('meshleft', true);"/><br/>
 
 </div>
-	
+
 <!--END-BOOKMARKS-TOOLBAR-->
 
 <div id="DBinfo">
@@ -317,10 +317,10 @@
 	<p1>Number of elements:</p1><p2>2</p2><br/>
 	<p1>Right Size:</p1><p2>32.81x36.55x64.06cm</p2><br/>
 	<p1>Left Size:</p1><p2>33.07x34.56x66.60cm</p2><br/>
-	</div>		
-	
+	</div>
+
 </div>
-	
+
 <canvas id="draw-canvas" style="background-color: #F0F0F0"/>
 
 </body>
@@ -338,22 +338,22 @@ function setup3dhop() {
 			"mesh_r" : { url: "models/02_abuoda/02_r.nxz" },
 			"mesh_l" : { url: "models/02_abuoda/02_l.nxz" }
 				},
-		
+
 		modelInstances : {
-			"model_r" : { 
+			"model_r" : {
 				mesh  : "mesh_r",
 				color : [0.8, 0.7, 0.75],
 				tags : ["meshright"]
 			},
-			
-			"model_l" : { 
+
+			"model_l" : {
 				mesh  : "mesh_l",
 				color : [0.8, 0.7, 0.75],
 				tags : ["meshleft"]
 			}
 
 		},
-		
+
 		trackball: {
 			type : TurntablePanTrackball,
 			trackOptions : {
@@ -361,7 +361,7 @@ function setup3dhop() {
 				startTheta: 15,
 				startDistance: 2.5,
 				minMaxPhi: [-180, 180],
-				minMaxTheta: [-10.0, 50.0],
+				minMaxTheta: [0, 180.0],
 				minMaxDist: [0.5, 3.0]
 			}
 		},
@@ -381,11 +381,11 @@ function setup3dhop() {
 //--SECTIONS--
 	sectiontoolInit();
 //--SECTIONS--
-	
+
 //--LIGHTING--
 	presenter.enableSceneLighting(false);
 //--LIGHTING--
-	
+
 //--HIDE HOTSPOTS AT START--
 	presenter.setSpotVisibility(HOP_ALL, false, true);
 //--HIDE HOTSPOTS AT START--
@@ -421,31 +421,31 @@ function actionsToolbar(action) {
 //--SECTIONS--
 	else if(action=='sections' || action=='sections_on') { sectiontoolReset(); sectiontoolSwitch(); }
 //--SECTIONS--
-}	
+}
 //--MEASURE--
 function onEndMeasure(measure) {
 	// measure.toFixed(2) sets the number of decimals when displaying the measure
 	// depending on the model measure units, use "mm","m","km" or whatever you have
-	$('#measure-output').html(measure.toFixed(2) + "cm"); 
+	$('#measure-output').html(measure.toFixed(2) + "cm");
 }
 //--MEASURE--
 //--PICKPOINT--
 function onEndPick(point) {
-	// .toFixed(2) sets the number of decimals when displaying the picked point	
+	// .toFixed(2) sets the number of decimals when displaying the picked point
 	var x = point[0].toFixed(2);
 	var y = point[1].toFixed(2);
 	var z = point[2].toFixed(2);
     $('#pickpoint-output').html("[ "+x+" , "+y+" , "+z+" ]");
-} 
-//--PICKPOINT--	
+}
+//--PICKPOINT--
 
 $(document).ready(function(){
 	init3dhop();
 
 	setup3dhop();
-	
+
 	resizeCanvas (1000,750);
-		
+
 });
 </script>
 </html>
