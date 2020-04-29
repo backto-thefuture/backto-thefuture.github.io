@@ -1,0 +1,501 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta content="charset=UTF-8"/>
+<title>backtothefutureproject</title>
+	
+<style>
+	.container {
+		display: grid;
+		grid-gap: 5px;
+		grid-template-areas:
+			"container-3dhop"
+			"container-description"
+			"container-images"
+			"container-text"
+			;
+	}
+	.container-3dhop {
+		grid-area: hop3D;
+
+	}
+	.container-description {
+		grid-area: description;
+	}
+	.container-images {
+		grid-area: content3D;
+	}
+	.container-text {
+		grid-area: textbox;
+	}
+	
+/*
+	@media (max-width: 500px) {
+		.container {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-areas:
+			"header"
+			"nav"
+			"content3D"
+			"description"
+			"footer";
+		}
+	}
+	
+	@media (max-width: 1007px) {
+		.container {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-areas:
+			"header header nav nav"
+			"content3D content3D description description"
+			"footer footer footer footer";
+		}
+	}
+
+@media (min-width: 1007px) {
+		.container {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-areas:
+			"header header nav nav"
+			"content3D content3D description description"
+			"footer footer footer footer";
+		}
+	}
+
+-->
+	#3dhop {
+}
+</style>	
+	
+	
+	
+<!--STYLESHEET-->
+<link type="text/css" rel="stylesheet" href="stylesheet/3dhop1.css"/>
+<link type="text/css" rel="stylesheet" href="stylesheet/backto1.css"/>
+<!--SPIDERGL-->
+<script type="text/javascript" src="js/spidergl.js"></script>
+<!--JQUERY-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--PRESENTER-->
+<script type="text/javascript" src="js/presenter.js"></script>
+<!--3D MODELS LOADING AND RENDERING-->
+<script type="text/javascript" src="js/nexus.js"></script>
+<script type="text/javascript" src="js/ply.js"></script>
+<!--TRACKBALLS-->
+<script type="text/javascript" src="js/trackball_turntable.js"></script>
+<script type="text/javascript" src="js/trackball_turntable_pan.js"></script>
+<script type="text/javascript" src="js/trackball_pantilt.js"></script>
+<script type="text/javascript" src="js/trackball_sphere.js"></script>
+<!--UTILITY-->
+<script type="text/javascript" src="js/init.js"></script>
+
+</head>
+
+<!--START-HEADER-->
+
+<body>	
+<div class="header">
+  <a class="logo" title="backtothefuture" href="https://backto-thefuture.github.io/"></a>
+  <div class="header-right">
+    <a class="active" href="#home">ABOUT</a>
+    <a href="#contact">ESITI</a>
+    <a href="#about">CONTATTACI</a>
+  </div>	
+</div>
+	
+<div class="container">
+	
+<div class="container-3dhop">
+<div class="container-description">	
+  bla bla
+</div>
+<div class="container-images">	
+	bla bla
+</div>
+<div class="container-text">	
+	bla bla
+</div>
+  </div>
+
+<!--END-HEADER-->
+
+
+
+
+<!--END-BOOKMARKS-TOOLBAR-->
+
+<div id="3dhop" style="background-color: #F0F0F0"/>
+  <div id="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()">
+    <!--START-TOOLBAR-->
+    <div id="toolbar"> <img id="home"
+	   title="Home"
+	   src="skins/dark/home.png"/><br/>
+      <!--ZOOM-->
+      <img id="zoomin"
+	   title="Zoom In"
+	   src="skins/dark/zoomin.png"/><br/>
+      <img id="zoomout"
+	   title="Zoom Out"
+	   src="skins/dark/zoomout.png"/><br/>
+      <!--ZOOM-->
+      <!--LIGHTING-->
+      <img id="lighting_off"
+	   title="Enable Lighting"
+	   src="skins/dark/lighting_off.png"
+	   style="position:absolute; visibility:hidden;"/> <img id="lighting"
+	   title="Disable Lighting"
+	   src="skins/dark/lighting.png"/><br/>
+      <!--LIGHTING-->
+      <!--LIGHT-->
+      <img id="light_on"
+	   title="Disable Light Control"
+	   src="skins/dark/lightcontrol_on.png"
+	   style="position:absolute; visibility:hidden;"/> <img id="light"
+	   title="Enable Light Control"
+	   src="skins/dark/lightcontrol.png"/><br/>
+      <!--LIGHT-->
+      <!--HOTSPOT-->
+      <img id="hotspot_on"
+	   title="Hide Hotspots"
+	   src="skins/dark/pin_on.png"
+	   style="position: absolute; visibility: hidden;"> <img id="hotspot"
+	   title="Show Hotspots"
+	   src="skins/dark/pin.png"	/><br/>
+      <!--HOTSPOT-->
+      <!--MEASURE-->
+      <img id="measure_on"
+	   title="Disable Measure Tool"
+	   src="skins/dark/measure_on.png"
+	   style="position:absolute; visibility:hidden;"/> <img id="measure"
+	   title="Enable Measure Tool"
+	   src="skins/dark/measure.png"/><br/>
+      <!--MEASURE-->
+      <!--POINT PICKING-->
+      <img id="pick_on"
+	   title="Disable PickPoint Mode"
+	   src="skins/dark/pick_on.png"
+	   style="position:absolute; visibility:hidden;"/> <img id="pick"
+	   title="Enable PickPoint Mode"
+	   src="skins/dark/pick.png"/><br/>
+      <!--POINT PICKING-->
+      <!--SECTIONS-->
+      <img id="sections_on"
+	   title="Disable Plane Sections"
+	   src="skins/dark/sections_on.png"
+	   style="position:absolute; visibility:hidden;"/> <img id="sections"
+	   title="Enable Plane Sections"
+	   src="skins/dark/sections.png"/><br/>
+      <!--SECTIONS-->
+      <!--COLOR-->
+      <img id="color_on"
+	   title="Disable Solid Color"
+	   src="skins/dark/color_on.png"
+	   style="position:absolute; visibility:hidden;"/> <img id="color"
+	   title="Enable Solid Color"
+	   src="skins/dark/color.png"/><br/>
+      <!--COLOR-->
+      <!--CAMERA-->
+      <img id="perspective"
+	   title="Perspective Camera"
+	   src="skins/dark/perspective.png"
+	   style="position:absolute; visibility:hidden;"/> <img id="orthographic"
+	   title="Orthographic Camera"
+	   src="skins/dark/orthographic.png"/><br/>
+      <!--CAMERA-->
+      <!--FULLSCREEN-->
+      <!--  <img id="full_on"     title="Exit Full Screen"       src="skins/dark/full_on.png" style="position:absolute; visibility:hidden;"/>
+  <img id="full"        title="Full Screen"            src="skins/dark/full.png"/>-->
+      <!--FULLSCREEN-->
+      <!--MEASURE-->
+      <div id="measure-box"
+	  class="output-box">Measured length
+        <hr/>
+        <span id="measure-output"
+		   class="output-text"
+		   onmousedown="event.stopPropagation()">0.0</span></div>
+      <!--MEASURE-->
+      <!--POINT PICKING-->
+      <div id="pickpoint-box"
+	  class="output-box">XYZ picked point
+        <hr/>
+        <span id="pickpoint-output"
+		   class="output-text"
+		   onmousedown="event.stopPropagation()">[ 0 , 0 , 0 ]</span></div>
+      <!--POINT PICKING-->
+      <!--SECTIONS-->
+      <div id="sections-box" class="output-box">
+        <table class="output-table" onmousedown="event.stopPropagation()">
+          <tr>
+            <td>Plane</td>
+            <td>Position</td>
+            <td>Flip</td>
+          </tr>
+          <tr>
+            <td><img   id="xplane_on"
+				 title="Disable X Axis Section"
+				 src="skins/icons/sectionX_on.png"
+				 onclick="sectionxSwitch()"
+				 style="position:absolute; visibility:hidden; border:1px inset;"/> <img   id="xplane"
+				 title="Enable X Axis Section"
+				 src="skins/icons/sectionX.png"
+				 onclick="sectionxSwitch()"/><br/></td>
+            <td><input id="xplaneSlider"
+				   class="output-input"
+				   type="range"
+				   title="Move X Axis Section Position"/></td>
+            <td><input id="xplaneFlip"
+				   class="output-input"
+				   type="checkbox"
+				   title="Flip X Axis Section Direction"/></td>
+          </tr>
+          <tr>
+            <td><img   id="yplane_on"
+				 title="Disable Y Axis Section"
+				 src="skins/icons/sectionY_on.png"
+				 onclick="sectionySwitch()"
+				 style="position:absolute; visibility:hidden; border:1px inset;"/> <img   id="yplane"
+				 title="Enable Y Axis Section"
+				 src="skins/icons/sectionY.png"
+				 onclick="sectionySwitch()"/><br/></td>
+            <td><input id="yplaneSlider"
+				   class="output-input"
+				   type="range"
+				   title="Move Y Axis Section Position"/></td>
+            <td><input id="yplaneFlip"
+				   class="output-input"
+				   type="checkbox"
+				   title="Flip Y Axis Section Direction"/></td>
+          </tr>
+          <tr>
+            <td><img   id="zplane_on"
+				 title="Disable Z Axis Section"
+				 src="skins/icons/sectionZ_on.png"
+				 onclick="sectionzSwitch()"
+				 style="position:absolute; visibility:hidden; border:1px inset;"/> <img   id="zplane"
+				 title="Enable Z Axis Section"
+				 src="skins/icons/sectionZ.png"
+				 onclick="sectionzSwitch()"/><br/></td>
+            <td><input id="zplaneSlider"
+				   class="output-input"
+				   type="range"
+				   title="Move Y Axis Section Position"/></td>
+            <td><input id="zplaneFlip"
+				   class="output-input"
+				   type="checkbox"
+				   title="Flip Z Axis Section Direction"/></td>
+          </tr>
+        </table>
+        <table class="output-table"
+		 onmousedown="event.stopPropagation()"
+		 style="text-align:right;">
+          <tr>
+            <td>Show planes
+              <input id="showPlane"
+						   class="output-input"
+						   type="checkbox"
+						   title="Show Section Planes"
+						   style="bottom:-3px;"/></td>
+            <td>Show edges
+              <input  id="showBorder"
+						  class="output-input"
+						  type="checkbox"
+						  title="Show Section Edges"
+						  style="bottom:-3px;"/></td>
+          </tr>
+        </table>
+      </div>
+      <!--SECTIONS-->
+      <!--END-TOOLBAR-->
+      <!--START-BOOKMARKS-TOOLBAR-->
+    </div>
+    <div id="bookmarksToolbar"
+	 onmousedown="if (event.preventDefault) event.preventDefault()">
+      <!--SHOW-HIDE-ALL-->
+      <img id="showall"
+	   title="Show All"
+	   src="skins/buttons/show_all.png"
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, true, true);"/><br/>
+      <img id="hideall"
+	   title="Hide All"
+	   src="skins/buttons/hide_all.png"
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, true);"/><br/>
+      <!--SHOW-PARTS-->
+      <img id="showdx"
+	   title="Show Right"
+	   src="skins/buttons/right.png"
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshright', true, true);"/><br/>
+      <img id="showsx"
+	   title="Show Left"
+	   src="skins/buttons/left.png"
+	   onclick="presenter.setInstanceVisibility(HOP_ALL, false, false); presenter.setInstanceVisibility('meshleft', true, true);"/><br/>
+      <!--TOGGLE-PARTS-->
+      <img id="toggledx"
+	   title="Toggle Right"
+	   src="skins/buttons/toggle_right.png"
+	   onclick="presenter.toggleInstanceVisibility('meshright', true);"/><br/>
+      <img id="togglesx"
+	   title="Toggle Left"
+	   src="skins/buttons/toggle_left.png"
+	   onclick="presenter.toggleInstanceVisibility('meshleft', true);"/><br/>
+    </div>
+  </div>
+	</div>
+<div class="container-description">
+	<h4>Model of the Small Temple of Abu Simbel</h4>
+	<p1>ID:</p1><p2>Cat.7104</p2><br/>
+	<p1>Material:</p1><p2>Painted wood</p2><br/>
+	<p1>Period:</p1><p2>About 1820</p2><br/>
+	<p1>Number of elements:</p1><p2>2</p2><br/>
+	<p1>Right Size:</p1><p2>31.71x36.34x81.55cm</p2><br/>
+	<p1>Left Size:</p1><p2>38.88x36.47x81.64cm</p2><br/>
+	</div>
+</body>
+
+<script type="text/javascript">
+var presenter = null;
+
+function setup3dhop() {
+	presenter = new Presenter("draw-canvas");
+
+	presenter.setScene({
+		meshes: {
+			"mesh_r" : { url: "models/04_abusimbel/04_r.nxz" },
+			"mesh_l" : { url: "models/04_abusimbel/04_l.nxz" },
+			"hotspot_1" : { url: "models/04_abusimbel/abusimbel_hotspots/abusimbel_s_0.ply" },
+			"hotspot_2" : { url: "models/04_abusimbel/abusimbel_hotspots/abusimbel_s_1.ply" },
+			"hotspot_3" : { url: "models/04_abusimbel/abusimbel_hotspots/abusimbel_h_0.ply" },
+			"hotspot_4" : { url: "models/04_abusimbel/abusimbel_hotspots/abusimbel_h_1.ply" }
+		},
+
+		modelInstances : {
+			"model_r" : {
+				mesh  : "mesh_r",
+				color : [0.8, 0.7, 0.75],
+				tags : ["meshright"]
+			},
+
+			"model_l" : {
+				mesh  : "mesh_l",
+				color : [0.8, 0.7, 0.75],
+				tags : ["meshleft"]
+			}
+		},
+
+		spots : {
+			"spot1" : {
+				mesh  : "hotspot_1",
+				color : [0.0, 1, 1.0, 0.4],
+			 },
+			"spot2" : {
+				mesh  : "hotspot_2",
+				color : [0.0, 1, 1.0, 0.4],
+			 },
+			"spot3" : {
+				mesh  : "hotspot_3",
+				color : [0.0, 1, 1.0, 0.4],
+			 },
+			"spot4" : {
+				mesh  : "hotspot_4",
+				color : [0.0, 1, 1.0, 0.4],
+			 }
+			},
+
+		trackball: {
+			type : TurntablePanTrackball,
+			trackOptions : {
+				startPhi: 0,
+				startTheta: 15.0,
+				startDistance: 2.5,
+				minMaxPhi: [-180, 180],
+				minMaxTheta: [0, 180.0],
+				minMaxDist: [0.5, 3.0]
+			}
+		},
+		space : {
+			centerMode: "scene",
+			cameraFOV     : 50.0
+		}
+	});
+//--MEASURE--
+	presenter._onEndMeasurement = onEndMeasure;
+//--MEASURE--
+
+//--POINT PICKING--
+	presenter._onEndPickingPoint = onEndPick;
+//--POINT PICKING--
+
+//--SECTIONS--
+	sectiontoolInit();
+//--SECTIONS--
+
+//--LIGHTING--
+	presenter.enableSceneLighting(false);
+//--LIGHTING--
+
+//--HIDE HOTSPOTS AT START--
+	presenter.setSpotVisibility(HOP_ALL, false, true);
+//--HIDE HOTSPOTS AT START--
+}
+
+function actionsToolbar(action) {
+	if(action=='home') presenter.resetTrackball();
+//--FULLSCREEN--
+	//-- else if(action=='full'  || action=='full_on') fullscreenSwitch();
+//--FULLSCREEN--
+//--ZOOM--
+	else if(action=='zoomin') presenter.zoomIn();
+	else if(action=='zoomout') presenter.zoomOut();
+//--ZOOM--
+//--LIGHTING--
+	else if(action=='lighting' || action=='lighting_off') { presenter.enableSceneLighting(!presenter.isSceneLightingEnabled()); lightingSwitch(); }
+//--LIGHTING--
+//--LIGHT--
+	else if(action=='light' || action=='light_on') { presenter.enableLightTrackball(!presenter.isLightTrackballEnabled()); lightSwitch(); }
+//--LIGHT--
+//--CAMERA--
+	else if(action=='perspective' || action=='orthographic') { presenter.toggleCameraType(); cameraSwitch(); }
+//--CAMERA--
+//--COLOR--
+	else if(action=='color' || action=='color_on') { presenter.toggleInstanceSolidColor(HOP_ALL, true); colorSwitch(); }
+//--COLOR--
+//--MEASURE--
+	else if(action=='measure' || action=='measure_on') { presenter.enableMeasurementTool(!presenter.isMeasurementToolEnabled()); measureSwitch(); }
+//--MEASURE--
+//--POINT PICKING--
+	else if(action=='pick' || action=='pick_on') { presenter.enablePickpointMode(!presenter.isPickpointModeEnabled()); pickpointSwitch(); }
+//--POINT PICKING--
+//--SECTIONS--
+	else if(action=='sections' || action=='sections_on') { sectiontoolReset(); sectiontoolSwitch(); }
+//--SECTIONS--
+//--HOTSPOTS--
+	else if(action=='hotspot'|| action=='hotspot_on') { presenter.toggleSpotVisibility(HOP_ALL, true); presenter.enableOnHover(!presenter.isOnHoverEnabled()); hotspotSwitch(); }
+//--HOTSPOTS--
+}
+//--MEASURE--
+function onEndMeasure(measure) {
+	// measure.toFixed(2) sets the number of decimals when displaying the measure
+	// depending on the model measure units, use "mm","m","km" or whatever you have
+	$('#measure-output').html(measure.toFixed(2) + "cm");
+}
+//--MEASURE--
+//--PICKPOINT--
+function onEndPick(point) {
+	// .toFixed(2) sets the number of decimals when displaying the picked point
+	var x = point[0].toFixed(2);
+	var y = point[1].toFixed(2);
+	var z = point[2].toFixed(2);
+    $('#pickpoint-output').html("[ "+x+" , "+y+" , "+z+" ]");
+}
+//--PICKPOINT--
+
+$(document).ready(function(){
+	init3dhop();
+
+	setup3dhop();
+
+	resizeCanvas (1000,750);
+
+});
+
+</script>
+</html>

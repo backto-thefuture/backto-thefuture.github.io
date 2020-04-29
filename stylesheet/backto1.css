@@ -1,0 +1,106 @@
+/* CSS Document for Screens */
+
+/* import Fonts from google */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
+
+body {font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 300; color: #555; margin: 0; padding:0;}
+
+/* Text */
+
+
+h4 { margin: 0 0 0.25em 0; font-size: 1em;}
+
+
+p { margin: 0 0 0.25em 0; }
+p1 { margin: 0 0 0.25em 0; font-size: 0.9em; line-height: 1.25em; font-weight: 500; }
+p2 { margin: 0 0 0.25em 0; lfont-size: 0.9em; ine-height: 1.25em; font-weight: 500; }
+
+a { color: #007eff;  }
+a:visited {color:#65b1ff;}
+
+/* Header */
+
+/* 
+
+header {height:140px; min-width: 1000px; position: absolute; background-color: #0075B0;}
+
+header a.logo {
+	position:absolute; 
+	display: block; width: 100px; height: 100px;
+	background: url(../images/logo.png) no-repeat 0 0; background-size: contain;
+	top: 20px; left: 20px;
+}
+header a.logo span {display:none;}
+
+header div h1 { line-height: 1.1em; margin: 20px 0 0px 140px; color: #FFFFFF; }
+header div h2 { line-height: 1.5em; margin: 10px 0 0 140px; color: #FFFFFF; font-weight: 500;}
+header div h3 { line-height: 1.5em; margin: 0 0 0 140px; color: #FFFFFF; font-weight: 500;}
+*/
+
+/* Header2 */
+
+.header {
+  background-color: #39464f;
+  padding: 20px 20px;
+  min-height: 60px;
+}
+
+.header a {
+  float: none;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px; 
+  line-height: 50px;
+
+}
+
+.header a.logo {
+  float: left; 
+	display: block; width: 450px ; height:40px;
+	background: url("../images/logo_long.png") no-repeat 0 0; background-size: contain;
+}
+
+.header a:hover {
+  color:  #a96b1f;
+}
+
+/*.header a.active {
+  background-color: #a96b1f;
+  color: white;
+} */
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.container > * {
+	border: 2px solid green;
+	min-width: 500px;
+	
+}
+
+.container-3dhop {
+	background-color: #BD1214;
+    border: 2px solid black;
+	float:inherit;
+	font-size: 10px; 
+	font-weight: 300; 
+	color: #555;
+}
+
+body div h4 { color: #9d3b38; font-weight: 500;}
