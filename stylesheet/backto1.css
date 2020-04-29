@@ -90,17 +90,8 @@ header div h3 { line-height: 1.5em; margin: 0 0 0 140px; color: #FFFFFF; font-we
 
 .container > * {
 	border: 2px solid green;
-	min-width: 500px;
-	
+	margin-top: 20px;	
 }
 
-.container-3dhop {
-	background-color: #BD1214;
-    border: 2px solid black;
-	float:inherit;
-	font-size: 10px; 
-	font-weight: 300; 
-	color: #555;
-}
 
 body div h4 { color: #9d3b38; font-weight: 500;}
