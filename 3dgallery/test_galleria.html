@@ -1,0 +1,183 @@
+<style>
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 5vw);
+  grid-gap: 1.5rem; 
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.gallery__item--1.1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--1.2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--1.3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.gallery__item--1.4 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.gallery__item--1.5 {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--2.1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+.gallery__item--2.2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+.gallery__item--2.3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+.gallery__item--2.4 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+.gallery__item--2.5 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+</style>
+
+<body>
+        <div class="container">
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1.1">
+                    <a>hello world </a>
+                </figure>
+                <figure class="gallery__item gallery__item--1.2">
+                    <img src="temple-of-dakka.png" alt="Gallery image 2" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--1.3">
+                    <img src="temple-of-debod.png" alt="Gallery image 3" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--1.4">
+                    <img src="temple-of-dendur.png" alt="Gallery image 4" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--1.5">
+                    <img src="temple-of-dendur.png" alt="Gallery image 4" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--2.1">
+                    <img src="propylaea.png" alt="Gallery image 6" class="gallery__img">
+                </figure>
+				<figure class="gallery__item gallery__item--2.2">
+                    <img src="abu-oda.png" alt="Gallery image 6" class="gallery__img">
+                </figure>
+				<figure class="gallery__item gallery__item--2.3">
+                    <img src="beit-el-wali.png" alt="Gallery image 6" class="gallery__img">
+                </figure>
+				<figure class="gallery__item gallery__item--2.4">
+                    <img src="image-6.jpg" alt="Gallery image 6" class="gallery__img">
+                </figure>
+				<figure class="gallery__item gallery__item--2.5">
+                    <img src="image-6.jpg" alt="Gallery image 6" class="gallery__img">
+                </figure>
+            </div>
+        </div>
+    </body>
