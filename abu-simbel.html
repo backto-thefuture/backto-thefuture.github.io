@@ -334,11 +334,8 @@ function setup3dhop() {
 	presenter.setScene({
 		meshes: {
 			"mesh_r" : { url: "models/04_abusimbel/04_r.nxz" },
-			"mesh_l" : { url: "models/04_abusimbel/04_l.nxz" },
-			"hotspot_1" : { url: "models/04_abusimbel/abusimbel_hotspots/abusimbel_s_0.ply" },
-			"hotspot_2" : { url: "models/04_abusimbel/abusimbel_hotspots/abusimbel_s_1.ply" },
-			"hotspot_3" : { url: "models/04_abusimbel/abusimbel_hotspots/abusimbel_h_0.ply" },
-			"hotspot_4" : { url: "models/04_abusimbel/abusimbel_hotspots/abusimbel_h_1.ply" }
+			"mesh_l" : { url: "models/04_abusimbel/04_l.nxz" }
+
 		},
 
 		modelInstances : {
@@ -354,25 +351,7 @@ function setup3dhop() {
 				tags : ["meshleft"]
 			}
 		},
-<--START-HEADER		spots : {
-			"spot1" : {
-				mesh  : "hotspot_1",
-				color : [0.0, 1, 1.0, 0.4],
-			 },
-			"spot2" : {
-				mesh  : "hotspot_2",
-				color : [0.0, 1, 1.0, 0.4],
-			 },
-			"spot3" : {
-				mesh  : "hotspot_3",
-				color : [0.0, 1, 1.0, 0.4],
-			 },
-			"spot4" : {
-				mesh  : "hotspot_4",
-				color : [0.0, 1, 1.0, 0.4],
-			 }
-			},
--->
+
 	
 		trackball: {
 			type : TurntablePanTrackball,
